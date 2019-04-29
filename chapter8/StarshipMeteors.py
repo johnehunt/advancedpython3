@@ -1,0 +1,215 @@
+import pygame, random, time
+from pygame.locals import *
+
+DISPLAY_WIDTH = 600
+DISPLAY_HEIGHT = 400
+
+INITIAL_METEOR_Y_LOCATION = 10
+INITIAL_NUMBER_OF_METEORS = 6
+MAX_METEOR_SPEED = 5
+STARSHIP_SPEED = 10
+
+BLUE = (0, 0, 255)
+WHITE = (255, 255, 255)
+BACKGROUND = (0, 0, 0)
+
+REFRESH_RATE = 60
+
+MAX_NUMBER_OF_CYCLE = 1000
+NEW_METEOR_CYCLE_INTERVAL = 50
+
+
+class GameObject:
+
+    def load_image(self, filename):
+        self.image = pygame.image.load(filename)
+        self.width = self.image.get_width()
+        self.height = self.image.get_height()
+
+    def rect(self):
+        """ Generates a rectangle repsenting the objects location
+        and dimensions """
+        return pygame.Rect(self.x, self.y, self.width, self.height)
+
+
+class Starship(GameObject):
+    """ Represents a starship"""
+
+    def __init__(self, game):
+        self.game = game
+        self.x = DISPLAY_WIDTH / 2
+        self.y = DISPLAY_HEIGHT - 40
+        self.load_image('starship.png')
+
+    def move_right(self):
+        """ moves the starship right across the screen """
+        self.x = self.x + STARSHIP_SPEED
+        if self.x + self.width > DISPLAY_WIDTH:
+            self.x = DISPLAY_WIDTH - self.width
+
+    def move_left(self):
+        """ Move the starship left across the screen """
+        self.x = self.x - STARSHIP_SPEED
+        if self.x < 0:
+            self.x = 0
+
+    def move_up(self):
+        """ Move the starship up the screen """
+        self.y = self.y - STARSHIP_SPEED
+        if self.y < 0:
+            self.y = 0
+
+    def move_down(self):
+        """ Move the starship down the screen """
+        self.y = self.y + STARSHIP_SPEED
+        if self.y + self.height > DISPLAY_HEIGHT:
+            self.y = DISPLAY_HEIGHT - self.height
+
+    def draw(self):
+        """ draw the starship at the current x, y coordinates """
+        self.game.display_surface.blit(self.image, (self.x, self.y))
+
+    def __str__(self):
+        return 'Starship(' + str(self.x) + ', ' + str(self.y) + ')'
+
+
+class Meteor(GameObject):
+    """ represents a meteor in the game """
+
+    def __init__(self, game):
+        self.game = game
+        self.x = random.randint(0, DISPLAY_WIDTH)
+        self.y = INITIAL_METEOR_Y_LOCATION
+        self.speed = random.randint(1, MAX_METEOR_SPEED)
+        self.load_image('meteor.png')
+
+    def move_down(self):
+        """ Move the meteor down the screen """
+        self.y = self.y + self.speed
+        if self.y > DISPLAY_HEIGHT:
+            self.y = self.y = 5
+
+    def draw(self):
+        """ draw the Meteor at the
+        current x, y coordinates """
+        self.game.display_surface.blit(self.image, (self.x, self.y))
+
+    def __str__(self):
+        return 'M(' + str(self.x) + ', ' + str(self.y) + ')'
+
+
+class Game:
+    """ Represents the game itself, holds the main game playing loop """
+
+    def __init__(self):
+        print('Initialising PyGame')
+        pygame.init()
+        self.display_surface = pygame.display.set_mode((DISPLAY_WIDTH, DISPLAY_HEIGHT))
+        pygame.display.set_caption('Starship Meteors')
+        # Used for timing within the program.
+        self.clock = pygame.time.Clock()
+        # Set up the starship
+        self.starship = Starship(self)
+        # Set up meteors
+        self.meteors = [Meteor(self) for _ in range(0, INITIAL_NUMBER_OF_METEORS)]
+        pygame.display.update()
+
+    def _check_for_colllision(self):
+        """ Checks to see if any of the meteors have collided with the starship """
+        result = False
+        for meteor in self.meteors:
+            if self.starship.rect().colliderect(meteor.rect()):
+                result = True
+                break
+        return result
+
+    def _display_message(self, message):
+        """ Displays a message to the user on the screen """
+        text_font = pygame.font.Font('freesansbold.ttf', 48)
+        text_surface = text_font.render(message, True, BLUE, WHITE)
+        text_rectangle = text_surface.get_rect()
+        text_rectangle.center = (DISPLAY_WIDTH / 2, DISPLAY_HEIGHT / 2)
+        self.display_surface.fill(WHITE)
+        self.display_surface.blit(text_surface, text_rectangle)
+
+    def _pause(self):
+        paused = True
+        while paused:
+            for event in pygame.event.get():
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_p:
+                        paused = False
+                        break
+
+    def play(self):
+        running = True
+        crashed = False
+        cycle_count = 0
+        while running and not crashed:
+
+            cycle_count += 1
+            if cycle_count % NEW_METEOR_CYCLE_INTERVAL == 0:
+                self.meteors.append(Meteor(self))
+            if cycle_count == MAX_NUMBER_OF_CYCLE:
+                self._display_message('WINNER!')
+                print('You won')
+                break
+
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    running = False
+                elif event.type == pygame.KEYDOWN:
+                    # Check to see which key is pressed
+                    if event.key == pygame.K_RIGHT:
+                        # Right arrow key has been pressed
+                        # move the player right
+                        self.starship.move_right()
+                    elif event.key == pygame.K_LEFT:
+                        # Left arrow has been pressed
+                        # move the player left
+                        self.starship.move_left()
+                    elif event.key == pygame.K_UP:
+                        self.starship.move_up()
+                    elif event.key == pygame.K_DOWN:
+                        self.starship.move_down()
+                    elif event.key == pygame.K_p:
+                        self._pause()
+                    elif event.key == pygame.K_q:
+                        running = False
+
+            # Move the Meteors
+            for meteor in self.meteors:
+                meteor.move_down()
+
+            # Clear the screen of current elements
+            self.display_surface.fill(BACKGROUND)
+
+            # Draw the meteors and the starship
+            self.starship.draw()
+            for meteor in self.meteors:
+                meteor.draw()
+
+            # Check to see if a meteor has hit the ship
+            if self._check_for_colllision():
+                crashed = True
+                self._display_message('Collision: Game Over')
+
+            # Update the display
+            pygame.display.update()
+
+            # Defines the frame rate. The number is number of frames per second.
+            self.clock.tick(REFRESH_RATE)
+
+        time.sleep(1)
+        pygame.quit()
+
+
+def main():
+    print('Starting Game')
+    game = Game()
+    game.play()
+    print('Game Over')
+
+
+if __name__ == '__main__':
+    main()
