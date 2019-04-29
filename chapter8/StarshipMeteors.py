@@ -104,6 +104,7 @@ class Game:
     def __init__(self):
         print('Initialising PyGame')
         pygame.init()
+        # Set up the display
         self.display_surface = pygame.display.set_mode((DISPLAY_WIDTH, DISPLAY_HEIGHT))
         pygame.display.set_caption('Starship Meteors')
         # Used for timing within the program.
@@ -112,9 +113,8 @@ class Game:
         self.starship = Starship(self)
         # Set up meteors
         self.meteors = [Meteor(self) for _ in range(0, INITIAL_NUMBER_OF_METEORS)]
-        pygame.display.update()
 
-    def _check_for_colllision(self):
+    def _check_for_collision(self):
         """ Checks to see if any of the meteors have collided with the starship """
         result = False
         for meteor in self.meteors:
@@ -142,22 +142,26 @@ class Game:
                         break
 
     def play(self):
-        running = True
-        crashed = False
+        is_running = True
+        starship_collided = False
         cycle_count = 0
-        while running and not crashed:
+        while is_running and not starship_collided:
 
             cycle_count += 1
+            # Determine if new mateors should be added
             if cycle_count % NEW_METEOR_CYCLE_INTERVAL == 0:
                 self.meteors.append(Meteor(self))
+
+            # See if the player has won
             if cycle_count == MAX_NUMBER_OF_CYCLE:
                 self._display_message('WINNER!')
                 print('You won')
                 break
 
+            # Work out what the user wants to do
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    running = False
+                    is_running = False
                 elif event.type == pygame.KEYDOWN:
                     # Check to see which key is pressed
                     if event.key == pygame.K_RIGHT:
@@ -175,13 +179,13 @@ class Game:
                     elif event.key == pygame.K_p:
                         self._pause()
                     elif event.key == pygame.K_q:
-                        running = False
+                        is_running = False
 
             # Move the Meteors
             for meteor in self.meteors:
                 meteor.move_down()
 
-            # Clear the screen of current elements
+            # Clear the screen of current contents
             self.display_surface.fill(BACKGROUND)
 
             # Draw the meteors and the starship
@@ -190,17 +194,19 @@ class Game:
                 meteor.draw()
 
             # Check to see if a meteor has hit the ship
-            if self._check_for_colllision():
-                crashed = True
+            if self._check_for_collision():
+                starship_collided = True
                 self._display_message('Collision: Game Over')
 
             # Update the display
             pygame.display.update()
 
-            # Defines the frame rate. The number is number of frames per second.
+            # Defines the frame rate. The number is number of frames per second
+            # Should be called once per frame (but only once)
             self.clock.tick(REFRESH_RATE)
 
         time.sleep(1)
+        # Let pygame shutdown gracefully
         pygame.quit()
 
 
