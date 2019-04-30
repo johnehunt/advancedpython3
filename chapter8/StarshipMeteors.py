@@ -1,11 +1,12 @@
 import pygame, random, time
-from pygame.locals import *
+
+FRAME_REFRESH_RATE = 30
 
 DISPLAY_WIDTH = 600
 DISPLAY_HEIGHT = 400
 
 INITIAL_METEOR_Y_LOCATION = 10
-INITIAL_NUMBER_OF_METEORS = 6
+INITIAL_NUMBER_OF_METEORS = 8
 MAX_METEOR_SPEED = 5
 STARSHIP_SPEED = 10
 
@@ -13,10 +14,8 @@ BLUE = (0, 0, 255)
 WHITE = (255, 255, 255)
 BACKGROUND = (0, 0, 0)
 
-REFRESH_RATE = 60
-
-MAX_NUMBER_OF_CYCLE = 1000
-NEW_METEOR_CYCLE_INTERVAL = 50
+MAX_NUMBER_OF_CYCLES = 1000
+NEW_METEOR_CYCLE_INTERVAL = 40
 
 
 class GameObject:
@@ -27,9 +26,14 @@ class GameObject:
         self.height = self.image.get_height()
 
     def rect(self):
-        """ Generates a rectangle repsenting the objects location
+        """ Generates a rectangle representing the objects location
         and dimensions """
         return pygame.Rect(self.x, self.y, self.width, self.height)
+
+    def draw(self):
+        """ draw the game object at the
+            current x, y coordinates """
+        self.game.display_surface.blit(self.image, (self.x, self.y))
 
 
 class Starship(GameObject):
@@ -65,10 +69,6 @@ class Starship(GameObject):
         if self.y + self.height > DISPLAY_HEIGHT:
             self.y = DISPLAY_HEIGHT - self.height
 
-    def draw(self):
-        """ draw the starship at the current x, y coordinates """
-        self.game.display_surface.blit(self.image, (self.x, self.y))
-
     def __str__(self):
         return 'Starship(' + str(self.x) + ', ' + str(self.y) + ')'
 
@@ -87,22 +87,16 @@ class Meteor(GameObject):
         """ Move the meteor down the screen """
         self.y = self.y + self.speed
         if self.y > DISPLAY_HEIGHT:
-            self.y = self.y = 5
-
-    def draw(self):
-        """ draw the Meteor at the
-        current x, y coordinates """
-        self.game.display_surface.blit(self.image, (self.x, self.y))
+            self.y = 5
 
     def __str__(self):
-        return 'M(' + str(self.x) + ', ' + str(self.y) + ')'
+        return 'Meteor(' + str(self.x) + ', ' + str(self.y) + ')'
 
 
 class Game:
     """ Represents the game itself, holds the main game playing loop """
 
     def __init__(self):
-        print('Initialising PyGame')
         pygame.init()
         # Set up the display
         self.display_surface = pygame.display.set_mode((DISPLAY_WIDTH, DISPLAY_HEIGHT))
@@ -145,17 +139,15 @@ class Game:
         is_running = True
         starship_collided = False
         cycle_count = 0
-        while is_running and not starship_collided:
 
+        # Main game playing Loop
+        while is_running and not starship_collided:
+            # Indicates how many times the main game loop has been run
             cycle_count += 1
-            # Determine if new mateors should be added
-            if cycle_count % NEW_METEOR_CYCLE_INTERVAL == 0:
-                self.meteors.append(Meteor(self))
 
             # See if the player has won
-            if cycle_count == MAX_NUMBER_OF_CYCLE:
+            if cycle_count == MAX_NUMBER_OF_CYCLES:
                 self._display_message('WINNER!')
-                print('You won')
                 break
 
             # Work out what the user wants to do
@@ -198,12 +190,16 @@ class Game:
                 starship_collided = True
                 self._display_message('Collision: Game Over')
 
+            # Determine if new mateors should be added
+            if cycle_count % NEW_METEOR_CYCLE_INTERVAL == 0:
+                self.meteors.append(Meteor(self))
+
             # Update the display
             pygame.display.update()
 
             # Defines the frame rate. The number is number of frames per second
             # Should be called once per frame (but only once)
-            self.clock.tick(REFRESH_RATE)
+            self.clock.tick(FRAME_REFRESH_RATE)
 
         time.sleep(1)
         # Let pygame shutdown gracefully
