@@ -18,7 +18,7 @@ NEW_METEOR_CYCLE_INTERVAL = 40
 class GameObject:
 
     def load_image(self, filename):
-        self.image = pygame.image.load(filename)
+        self.image = pygame.image.load(filename).convert()
         self.width = self.image.get_width()
         self.height = self.image.get_height()
 
