@@ -1,16 +1,14 @@
-# Pie chart, where the slices will be ordered and plotted counter-clockwise:
-
 import matplotlib.pyplot as pyplot
 
-labels = 'Java', 'Scala', 'Python', 'C#'
-sizes = [30, 15, 45, 10]
+print('Set up data')
+x = [1, 2, 3, 4, 5, 6, 7, 8, 10]
+y = [3, 4, 4.75, 5, 4.6, 4.12, 4, 4.25, 3.75]
 
-# only "explode" the 3rd slice (i.e. 'Python')
-explode = (0, 0, 0.1, 0)
+print('Configure graph)')
+pyplot.ylabel('y values', fontsize=11)
+pyplot.xlabel('x values', fontsize=11)
+pyplot.title("Simple Plot")
 
-fig1, ax1 = pyplot.subplots()
-ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%', shadow=True, startangle=90)
-
-ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-
+print('Plot the graph and display')
+pyplot.plot(x, y)
 pyplot.show()
