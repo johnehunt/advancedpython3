@@ -10,6 +10,6 @@ plt.xlabel('x values', fontsize=12)
 # Set the title
 plt.title("Sample Graph")
 
-# Plot and displ;ay the graph
+# Plot and display the graph
 plt.plot(x, y)
 plt.show()
