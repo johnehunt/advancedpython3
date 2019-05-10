@@ -1,14 +1,22 @@
 import matplotlib.pyplot as pyplot
+import numpy as np
 
-print('Set up data')
-x = [1, 2, 3, 4, 5, 6, 7, 8, 10]
-y = [3, 4, 4.75, 5, 4.6, 4.12, 4, 4.25, 3.75]
+# Data for plotting
+t = np.arange(0.0, 2.0, 0.01)
+s = 1 + np.sin(2 * np.pi * t)
 
-print('Configure graph)')
-pyplot.ylabel('y values', fontsize=11)
-pyplot.xlabel('x values', fontsize=11)
-pyplot.title("Simple Plot")
+# Initialize a Figure
+figure = pyplot.figure()
 
-print('Plot the graph and display')
-pyplot.plot(x, y)
+# Add Axes to the Figure
+axis = figure.add_subplot(111)
+axis.plot(t, s, color='green', label='yyy')
+axis.set(xlabel='time (s)', ylabel='voltage (mV)', title='Simple Plot')
+
+# Show the grid
+axis.grid()
+
+axis.legend()
+
 pyplot.show()
+
