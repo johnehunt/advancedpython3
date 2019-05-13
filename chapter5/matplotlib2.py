@@ -13,10 +13,16 @@ axis = figure.add_subplot(111)
 axis.plot(t, s, color='green', label='yyy')
 axis.set(xlabel='time (s)', ylabel='voltage (mV)', title='Simple Plot')
 
-# Show the grid
-axis.grid()
+x = 2.25 * np.random.rand(10)
+y = 2.25 * np.random.rand(10)
+axis.scatter(x, y, marker='o', label='xxx')
 
+# Show the grid
+axis.grid(linestyle='dashed')
+
+# Display the Legend
 axis.legend()
 
+# Generate the plot
 pyplot.show()
 
