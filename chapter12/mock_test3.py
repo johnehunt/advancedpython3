@@ -12,10 +12,12 @@ def some_func():
     response = external_module.api_call()
     return response
 
+
 def some_func_with_param(param):
     # call out to api module
     response = external_module.api_call_with_param(param)
     return response
+
 
 class test_some_func_calling_api(TestCase):
 
@@ -23,13 +25,11 @@ class test_some_func_calling_api(TestCase):
     def test_some_func(self, mock_api_call):
         # Sets up mock version of api_call
         mock_api_call.return_value = MagicMock(status_code=200, response=json.dumps({'key': 'value'}))
-        # Calls some_func(0 that calls the (mock) api_call() function
+        # Calls some_func() that calls the (mock) api_call() function
         result = some_func()
         # Check that the result returned from some_func() is what was expected
         self.assertEqual(result.status_code, 200, "returned status code is not 200")
-        self.assertEquals(result.response, '{"key": "value"}', "response JSON incorrect")
-        # Vertify that the mock_api_call was called as expected
-        mock_api_call.api_call.assert_called()
+        self.assertEqual(result.response, '{"key": "value"}', "response JSON incorrect")
 
     @patch('external_module.api_call_with_param')
     def test_some_func_with_param(self, mock_api_call):
@@ -37,10 +37,9 @@ class test_some_func_calling_api(TestCase):
         mock_api_call.return_value = MagicMock(status_code=200, response=json.dumps({'age': '23'}))
         result = some_func_with_param('Phoebe')
         # Check that the result returned from some_func() is what was expected
-        self.assertEquals(result.response, '{age": "23"}', 'JSON result incorrect')
-        # Vertify that the mock_api_call was called with the correct params
+        self.assertEqual(result.response, '{age": "23"}', 'JSON result incorrect')
+        # Verify that the mock_api_call was called with the correct params
         mock_api_call.api_call_with_param.assert_called_with('Phoebe')
-
 
 
 if __name__ == '__main__':
