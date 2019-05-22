@@ -1,6 +1,6 @@
 # Example of a 'cold' Observable
 import rx
-from rx.concurrency import CurrentThreadScheduler
+from rx.concurrency import NewThreadScheduler
 import time
 
 
@@ -9,5 +9,9 @@ def observer_function(value):
     print(value * value)
 
 
-rx.range(1, 100000, scheduler=CurrentThreadScheduler())\
+rx.range(1, 100000, scheduler=NewThreadScheduler())\
     .subscribe(observer_function)
+
+# As the observable runs in a separate thread need
+# ensure that the main thread does not terminate
+input('Press enter to finish')
