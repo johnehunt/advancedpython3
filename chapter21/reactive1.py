@@ -1,9 +1,9 @@
-from rx import Observable, Observer
+import rx
 
-source = Observable.from_list([2, 3, 5, 7])
+observable = rx.from_list([2, 3, 5, 7])
 
 
-class PrimeNumberReporter(Observer):
+class PrimeNumberObserver:
 
     def on_next(self, value):
         print('Object Received', value)
@@ -22,14 +22,14 @@ def prime_number_reporter(value):
 print('Set up subscribers')
 
 # Subscribe a lambda function
-source.subscribe(lambda value: print('Lambda Received', value))
+observable.subscribe(lambda value: print('Lambda Received', value))
 # Subscribe a named function
-source.subscribe(prime_number_reporter)
+observable.subscribe(prime_number_reporter)
 # Subscribe an Observer object
-source.subscribe(PrimeNumberReporter())
+observable.subscribe(PrimeNumberObserver())
 
 # Use lambdas to set up all three functions
-source.subscribe(
+observable.subscribe(
     on_next = lambda value: print('Received on_next', value),
     on_error = lambda exp: print('Error Occurred', exp),
     on_completed = lambda: print('Received completed notification')

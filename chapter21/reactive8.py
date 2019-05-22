@@ -1,4 +1,5 @@
-from rx import Observable, Observer
+import rx
+from rx import operators as op
 
 
 class PrimeNumberGenerator:
@@ -20,7 +21,7 @@ class PrimeNumberGenerator:
             if prime_number:
                 result.append(i)
             prime_number = True
-        return Observable.from_(result)
+        return rx.from_(result)
 
 
 prime_number_generator = PrimeNumberGenerator(15)

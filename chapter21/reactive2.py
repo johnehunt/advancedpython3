@@ -1,18 +1,20 @@
 # A subscribers example
 
-from rx import Observable, Observer
+import rx
 from rx.subjects import Subject
-import datetime
-import time
+from datetime import datetime
 
-source = Observable.from_list([2, 3, 5, 7])
+# You choose which of these to use
+# source = rx.from_([2, 3, 5, 7])
+# source = rx.from_iterable([2, 3, 5, 7])
+source = rx.from_list([2, 3, 5, 7])
 
 
-class PrimeNumbersSubject(Subject):
+class TimeStampSubject(Subject):
 
     def on_next(self, value):
         print('Subject Received', value)
-        super().on_next((value, datetime.datetime.now()))
+        super().on_next((value, datetime.now()))
 
     def on_completed(self):
         print('Data Stream Completed')
@@ -30,7 +32,7 @@ def prime_number_reporter(value):
 print('Set up')
 
 # Create the Subject
-subject = PrimeNumbersSubject()
+subject = TimeStampSubject()
 
 # Set up subscribers for the subject
 subject.subscribe(prime_number_reporter)
