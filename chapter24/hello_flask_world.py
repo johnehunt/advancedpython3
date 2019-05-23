@@ -1,5 +1,4 @@
-from flask import Flask, jsonify, url_for
-
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
@@ -8,8 +7,6 @@ app = Flask(__name__)
 def welcome():
     return jsonify({'msg': 'Hello Flask World'})
 
-with app.test_request_context():
-    print(url_for('welcome'))
 
-if __name__ == '__main__':
-    app.run(debug=True)
+app.run(debug=True)
+

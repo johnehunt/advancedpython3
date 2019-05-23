@@ -13,7 +13,7 @@ class Book:
     def __str__(self):
         return self.title + ' by ' + self.author + ' @ ' + str(self.price)
 
-    def serialize(self):
+    def to_json(self):
         return {
             'isbn': self.isbn,
             'title': self.title,
@@ -54,12 +54,12 @@ def configure_bookshop_service():
 
     @app.route('/book/list', methods=['GET'])
     def get_books():
-        return jsonify({'books': [b.serialize() for b in bookshop.books]})
+        return jsonify({'books': [b.to_json() for b in bookshop.books]})
 
     @app.route('/book/<int:isbn>', methods=['GET'])
     def get_book(isbn):
         book = bookshop.get(isbn)
-        return jsonify({'book': book.serialize()})
+        return jsonify({'book': book.to_json()})
 
     return app
 
