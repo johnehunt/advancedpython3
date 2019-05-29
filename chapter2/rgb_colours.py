@@ -9,6 +9,7 @@ app = wx.App()
 # Now create a Frame (representing the window)
 frame = wx.Frame(parent=None, title='Colour Chart')
 
+# Set up grid to be used to display colours
 grid = wx.grid.Grid(frame, -1)
 grid.CreateGrid(MAX_ROWS, 4)
 grid.SetColSize(1, 140)
@@ -23,6 +24,7 @@ blue = 0
 add_green = False
 add_blue = False
 
+# Generate RGB colours
 for i in range(0, MAX_ROWS):
     grid.SetCellBackgroundColour(i, 0, wx.Colour(red, green, blue))
     grid.SetCellValue(i, 1, 'RGB(' + str(red) + ', ' +  str(green) + ', ' +  str(blue) + ')')
