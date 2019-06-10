@@ -13,6 +13,7 @@ frame = wx.Frame(parent=None, title='Colour Chart')
 grid = wx.grid.Grid(frame, -1)
 grid.CreateGrid(MAX_ROWS, 4)
 grid.SetColSize(1, 140)
+# Set up the column headings
 grid.SetColLabelValue(0, 'Colour')
 grid.SetColLabelValue(1, 'RGB')
 grid.SetColLabelValue(2, 'Transparent')
