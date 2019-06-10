@@ -47,7 +47,7 @@ def setup_screen(title, background='white', screen_size_x=640, screen_size_y=320
 print("Starting ...")
 setup_screen('Fractal Tree', screen_size_x=IMAGE_SIZE_X, screen_size_y=IMAGE_SIZE_Y, tracer_size=2000)
 
-# Ensure tree is centred and point in the right direction
+# Ensure tree is centred and pointing in the right direction
 turtle.setposition(-50, -140)
 turtle.left(90)
 turtle.down()
