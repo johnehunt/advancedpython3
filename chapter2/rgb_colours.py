@@ -27,10 +27,13 @@ add_blue = False
 
 # Generate RGB colours
 for i in range(0, MAX_ROWS):
+    # Set the colour and text
     grid.SetCellBackgroundColour(i, 0, wx.Colour(red, green, blue))
     grid.SetCellValue(i, 1, 'RGB(' + str(red) + ', ' +  str(green) + ', ' +  str(blue) + ')')
+    # Add a bit of transparency
     grid.SetCellBackgroundColour(i, 2, wx.Colour(red, green, blue, alpha=127))
     grid.SetCellValue(i, 3, '127')
+    # Reset RGB values
     red = red + 30
     if red > 255:
         red = 0
