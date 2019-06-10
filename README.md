@@ -1,2 +1,2 @@
-# furtherpython3
-Code Repository for Going Further with Python 3 Programming
+# Advanced Guide to Python3 Programming
+Code Repository for Advanced Guide to Python 3 Programming
