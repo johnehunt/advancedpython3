@@ -24,7 +24,7 @@ class TicTacToeButton(wx.Button):
 
 
 class TicTacToeFrame(wx.Frame):
-
+    """ A Frame that holds a TicTacToe game"""
     def __init__(self):
         super(TicTacToeFrame, self).__init__(parent=None,
                                              title='TicTacToe App',
