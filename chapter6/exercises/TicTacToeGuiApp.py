@@ -1,6 +1,16 @@
 import wx
-from abc import ABCMeta, abstractmethod
-import random
+
+class Counter:
+    def __init__(self, string):
+        self.label = string
+
+    def __str__(self):
+        return self.label
+
+
+# Set up Counter Globals
+X = Counter('X')
+O = Counter('O')
 
 
 class TicTacToeButton(wx.Button):
@@ -21,14 +31,13 @@ class TicTacToeFrame(wx.Frame):
                                              size=(250, 100))
         self.button_grid = []
         self.board = Board()
-        self.human = HumanPlayer(self.board)
-        self.computer = ComputerPlayer(self.board)
-
+        self.first_player = Player(self.board)
+        self.first_player.counter = X
+        self.second_player = Player(self.board)
+        self.second_player.counter = O
+        self.next_player = self.first_player
         self.setup_display()
 
-        self.get_player_name()
-        self.select_player_counter()
-        self.select_first_player()
 
     def setup_display(self):
         # Create the panel to contain the widgets
@@ -55,19 +64,12 @@ class TicTacToeFrame(wx.Frame):
                                       wx.OK | wx.ICON_ERROR)
             dialog.ShowModal()
         else:
-            move = Move(self.human.counter, button_clicked.row, button_clicked.col)
+            move = Move(self.next_player.counter, button_clicked.row, button_clicked.col)
             self.make_a_move(move)
             finished = False
-            if self.board.check_for_winner(self.human):
-                self.show_winner_message(self.human)
+            if self.board.check_for_winner(self.next_player):
+                self.show_winner_message(self.next_player)
                 finished = True
-            else:
-                print('Computers move')
-                move = self.computer.get_move()
-                self.make_a_move(move)
-                if self.board.check_for_winner(self.computer):
-                    self.show_winner_message(self.computer)
-                    finished = True
             if finished == False and self.board.is_full():
                 print('Game is a Tie')
                 self.show_tie_message()
@@ -75,13 +77,10 @@ class TicTacToeFrame(wx.Frame):
             if finished:
                 print('Goodbye')
                 wx.Exit()
-
-    def select_first_player(self):
-        print('Starting to play the game')
-        if random.randint(0, 1) == 0:
-            print('Computer goes first')
-            move = self.computer.get_move()
-            self.make_a_move(move)
+            if self.next_player == self.first_player:
+                self.next_player = self.second_player
+            else:
+                self.next_player = self.first_player
 
     def make_a_move(self, move):
         self.board.add_move(move)
@@ -102,43 +101,6 @@ class TicTacToeFrame(wx.Frame):
                                   wx.OK)
         dialog.ShowModal()
 
-    def select_player_counter(self):
-        dialog = wx.MultiChoiceDialog(parent=None,
-                                      message='Do you want to be X or O?',
-                                      caption='Counter Selection',
-                                      choices=['X', 'O'],
-                                      style=wx.OK)
-        dialog.ShowModal()
-        selection = dialog.GetSelections()
-        if selection == [0]:
-            self.human.counter = X
-            self.computer.counter = O
-        else:
-            self.human.counter = O
-            self.computer.counter = X
-
-    def get_player_name(self):
-        dialog = wx.TextEntryDialog(None,
-                                    'Please enter your name',
-                                    'Player Name',
-                                    value='unknown',
-                                    style=wx.OK)
-        dialog.ShowModal()
-        self.human.name = dialog.GetValue()
-
-
-class Counter:
-    def __init__(self, string):
-        self.label = string
-
-    def __str__(self):
-        return self.label
-
-
-# Set up Counter Globals
-X = Counter('X')
-O = Counter('O')
-
 
 class Move:
     """ Represents a move made by a player """
@@ -152,8 +114,8 @@ class Move:
         return 'Move(' + str(self.x) + ', ' + str(self.y) + ')'
 
 
-class Player(metaclass=ABCMeta):
-    """ Abstract class representing a Player and their counter """
+class Player:
+    """ Class representing a Player and their counter """
 
     def __init__(self, board):
         self.board = board
@@ -168,59 +130,8 @@ class Player(metaclass=ABCMeta):
     def counter(self, value):
         self._counter = value
 
-    def get_move(self): pass
-
-
-class HumanPlayer(Player):
-    """ Represents a Human Player """
-
-    def __init__(self, board, name=''):
-        super().__init__(board)
-        self.name = name
-
     def __str__(self):
-        return self.name + ' [' + str(self.counter) + ']'
-
-
-class ComputerPlayer(Player):
-    """ Implements algorithms for playing game """
-
-    def __init__(self, board):
-        super().__init__(board)
-
-    def _randomly_select_cell(self):
-        """ Use a simplistic random selection approach
-        to find a cell to fill. """
-        while True:
-            # Randomly select the cell
-            row = random.randint(0, 2)
-            column = random.randint(0, 2)
-            # Check to see if the cell is empty
-            if self.board.is_empty_cell(row, column):
-                return Move(self.counter, row, column)
-
-    def get_move(self):
-        """ Provide a very simple algorithm for selecting a move"""
-        if self.board.is_empty_cell(1, 1):
-            # Choose the center
-            return Move(self.counter, 1, 1)
-        elif self.board.is_empty_cell(0, 0):
-            # Choose the top left
-            return Move(self.counter, 0, 0)
-        elif self.board.is_empty_cell(2, 2):
-            # Choose the bottom right
-            return Move(self.counter, 2, 2)
-        elif self.board.is_empty_cell(0, 2):
-            # Choose the top right
-            return Move(self.counter, 0, 2)
-        elif self.board.is_empty_cell(0, 2):
-            # Choose the top right
-            return Move(self.counter, 2, 0)
-        else:
-            return self._randomly_select_cell()
-
-    def __str__(self):
-        return 'Computer [' + str(self.counter) + ']'
+        return '[' + str(self.counter) + ']'
 
 
 class Board:
