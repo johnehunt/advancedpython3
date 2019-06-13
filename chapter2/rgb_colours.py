@@ -11,13 +11,15 @@ frame = wx.Frame(parent=None, title='Colour Chart')
 
 # Set up grid to be used to display colours
 grid = wx.grid.Grid(frame, -1)
-grid.CreateGrid(MAX_ROWS, 4)
-grid.SetColSize(1, 140)
+grid.CreateGrid(MAX_ROWS, 5)
+grid.SetColSize(0, 140)
+
 # Set up the column headings
-grid.SetColLabelValue(0, 'Colour')
-grid.SetColLabelValue(1, 'RGB')
-grid.SetColLabelValue(2, 'Transparent')
-grid.SetColLabelValue(3, 'alpha value')
+grid.SetColLabelValue(0, 'RGB')
+grid.SetColLabelValue(1, 'Solid')
+grid.SetColLabelValue(2, '75%')
+grid.SetColLabelValue(3, '50%')
+grid.SetColLabelValue(4, '25%')
 
 red = 0
 green = 0
@@ -28,11 +30,13 @@ add_blue = False
 # Generate RGB colours
 for i in range(0, MAX_ROWS):
     # Set the colour and text
-    grid.SetCellBackgroundColour(i, 0, wx.Colour(red, green, blue))
-    grid.SetCellValue(i, 1, 'RGB(' + str(red) + ', ' +  str(green) + ', ' +  str(blue) + ')')
-    # Add a bit of transparency
-    grid.SetCellBackgroundColour(i, 2, wx.Colour(red, green, blue, alpha=127))
-    grid.SetCellValue(i, 3, '127')
+    grid.SetCellValue(i, 0, 'RGB(' + str(red) + ', ' +  str(green) + ', ' +  str(blue) + ')')
+    # Solid version of colour
+    grid.SetCellBackgroundColour(i, 1, wx.Colour(red, green, blue))
+    # Add a bit of transparency 75%, 50% and 25%
+    grid.SetCellBackgroundColour(i, 2, wx.Colour(red, green, blue, alpha=191))
+    grid.SetCellBackgroundColour(i, 3, wx.Colour(red, green, blue, alpha=127))
+    grid.SetCellBackgroundColour(i, 4, wx.Colour(red, green, blue, alpha=64))
     # Reset RGB values
     red = red + 30
     if red > 255:
