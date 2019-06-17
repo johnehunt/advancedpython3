@@ -1,8 +1,12 @@
 import matplotlib.pyplot as pyplot
 
-labels = 'Python', 'Scala', 'C#', 'Java'
-sizes = [45, 10, 15, 30]
+labels = ('Python', 'Java', 'Scala', 'C#')
+sizes = [45, 30, 15, 10]
 
-pyplot.pie(sizes, labels=labels, autopct='%1.f%%', startangle=270)
+pyplot.pie(sizes,
+           labels=labels,
+           autopct='%1.f%%',
+           counterclock=False,
+           startangle=90)
 
 pyplot.show()

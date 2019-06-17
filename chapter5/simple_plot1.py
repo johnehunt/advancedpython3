@@ -1,5 +1,7 @@
-import matplotlib.pyplot as mpl
+import matplotlib.pyplot as pyplot
 
-mpl.plot([1, 0.25, 0.5, 2, 3, 3.75, 3.5])
+# Plot a sequence of values
+pyplot.plot([1, 0.25, 0.5, 2, 3, 3.75, 3.5])
 
-mpl.show()
+# Display the chart in a window
+pyplot.show()
