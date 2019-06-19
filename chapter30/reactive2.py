@@ -4,13 +4,14 @@ import rx
 from rx.subjects import Subject
 from datetime import datetime
 
-# You choose which of these to use
+# You can choose which of these to use
 # source = rx.from_([2, 3, 5, 7])
 # source = rx.from_iterable([2, 3, 5, 7])
 source = rx.from_list([2, 3, 5, 7])
 
 
 class TimeStampSubject(Subject):
+    """ Class implementing a Subject """
 
     def on_next(self, value):
         print('Subject Received', value)
