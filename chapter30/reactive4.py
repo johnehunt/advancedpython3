@@ -1,6 +1,5 @@
 # An example illustrating how to merge two data sources
 import rx
-from rx import operators as op
 
 # Set up two sources
 source1 = rx.from_list([2, 3, 5, 7])
