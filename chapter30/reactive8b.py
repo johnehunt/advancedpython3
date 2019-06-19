@@ -7,6 +7,6 @@ observable.subscribe(lambda v: print('Lambda1 Received', v), scheduler=ThreadPoo
 observable.subscribe(lambda v: print('Lambda2 Received', v), scheduler=ImmediateScheduler())
 observable.subscribe(lambda v: print('Lambda3 Received', v), scheduler=NewThreadScheduler())
 
-# As the observable runs in a separate thread need
-# ensure that the main thread does not terminate
+# As the observable runs in a separate thread we need
+# to ensure that the main thread does not terminate
 input('Press enter to finish')
