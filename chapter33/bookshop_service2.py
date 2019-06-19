@@ -74,7 +74,7 @@ def create_bookshop_service():
                     request.json.get('author', ""),
                     float(request.json['price']))
         bookshop.add_book(book)
-        return jsonify({'boon': book}), 201
+        return jsonify({'book': book}), 201
 
 
     @app.route('/book', methods=['PUT'])
