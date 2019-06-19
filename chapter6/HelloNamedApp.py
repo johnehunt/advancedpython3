@@ -8,7 +8,7 @@ class HelloFrame(wx.Frame):
                          title=title,
                          size=(300, 200))
 
-        self.name = '<unknown'
+        self.name = '<unknown>'
 
         # Create the BoxSizer to use for the Frame
         vertical_box_sizer = wx.BoxSizer(wx.VERTICAL)
