@@ -13,7 +13,7 @@ class Square(Figure):
     def __init__(self, parent, pos, size):
         super().__init__(parent=parent, pos=pos, size=size)
 
-    def on_paint(self, dc, event):
+    def on_paint(self, dc):
         dc.DrawRectangle(self.point, self.size)
 
 
@@ -22,7 +22,7 @@ class Line(Figure):
         super().__init__(parent=parent, pos=pos, size=wx.Size(size, size))
         self.end_point = wx.Point(self.point.x + size, self.point.y + size)
 
-    def on_paint(self, dc, event):
+    def on_paint(self, dc):
         dc.DrawLine(pt1=self.point, pt2=self.end_point)
 
 
@@ -31,7 +31,7 @@ class Circle(Figure):
         super().__init__(parent=parent, pos=pos, size=wx.Size(size, size))
         self.radius = (size - 10) / 2
 
-    def on_paint(self, dc, event):
+    def on_paint(self, dc):
         circle_center = wx.Point(self.point.x + self.radius, self.point.y + self.radius)
         dc.DrawCircle(pt=circle_center, radius=self.radius)
 
@@ -40,7 +40,7 @@ class Text(Figure):
     def __init__(self, parent, pos, size):
         super().__init__(parent=parent, pos=pos, size=wx.Size(size, size))
 
-    def on_paint(self, dc, event):
+    def on_paint(self, dc):
         dc.DrawText(text='Text', pt=self.point)
 
 
@@ -59,10 +59,10 @@ class PyDrawFrame(wx.Frame):
         super().__init__(None,
                          title=title,
                          size=(300, 200))
-        self.set_square_mode()
-        self._setup_menubar()
         self.vertical_box_sizer = wx.BoxSizer(wx.VERTICAL)
         self.SetSizer(self.vertical_box_sizer)
+        self.set_square_mode()
+        self._setup_menubar()
         self._setup_toolbar()
         self._setup_drawing_panel()
         self.Centre()
@@ -172,7 +172,7 @@ class Drawing(wx.Panel):
         self.SetBackgroundColour(wx.Colour(255, 255, 255))
         self.contents = []
         self.parent = parent
-        self.Bind(wx.EVT_PAINT, self.OnPaint)
+        self.Bind(wx.EVT_PAINT, self.on_paint)
         self.Bind(wx.EVT_LEFT_DOWN, self.on_mouse_click)
 
     def clear(self):
@@ -190,11 +190,11 @@ class Drawing(wx.Panel):
             fig = Line(self, point, size)
         self.contents.append(fig)
 
-    def OnPaint(self, event):
+    def on_paint(self, event):
         """set up the device context (DC) for painting"""
         dc = wx.PaintDC(self)
         for fig in self.contents:
-            fig.on_paint(dc, event)
+            fig.on_paint(dc)
 
     def on_mouse_click(self, mouse_event):
         point = mouse_event.GetPosition()
