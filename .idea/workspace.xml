@@ -3,7 +3,170 @@
   <component name="ChangeListManager">
     <list default="true" id="0629a549-70f2-4599-8251-4cab35ded4ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter15/text_streams.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/text_streams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter11/calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/calculator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter11/exercises/accounts-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/exercises/accounts-app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter11/exercises/fintech/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/exercises/fintech/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter11/exercises/fintech/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/exercises/fintech/accounts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter11/exercises/test_CurrentAccount.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/exercises/test_CurrentAccount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter11/external_module/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/external_module/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter11/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter11/test_calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/test_calculator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter11/testing-functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/testing-functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/exercises/deck_of_cards.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/exercises/deck_of_cards.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/external_module/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/external_module/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/mock_test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/mock_test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/mock_test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/mock_test4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/mock_test5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/mock_test6.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/mock_test7.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/people.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/people.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/directories1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/directories1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/exercise/create_file_with_date.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/exercise/create_file_with_date.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/exercise/load_date_from_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/exercise/load_date_from_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/files1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/files1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/files2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/files2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/files3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/files3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/files4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/files4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/my-new-file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/my-new-file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/myfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/myfile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/paths-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/paths-app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/rand-file-acces.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/rand-file-acces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/tempfiles1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/tempfiles1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/textfile1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/textfile1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/textfile2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/textfile2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter14/textfileexample.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/textfileexample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter15/binary_streams.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/binary_streams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter15/myfile.dat" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/myfile.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter15/myfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/myfile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter15/raw_io_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/raw_io_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter15/sockets.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/sockets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter15/starship.png" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/starship.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter15/stdinout_examples.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/stdinout_examples.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter15/streams_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/streams_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter15/text_streams.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/text_streams.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter16/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter16/csvdictexample.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/csvdictexample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter16/csvexample.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/csvexample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter16/exercises/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/exercises/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter16/exercises/fintech/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/exercises/fintech/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter16/exercises/fintech/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/exercises/fintech/accounts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter16/exercises/write_accounts_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/exercises/write_accounts_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter16/names.csv" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/names.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter16/sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/sample.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter17/exercises/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/exercises/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter17/exercises/accounts.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/exercises/accounts.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter17/exercises/fintech/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/exercises/fintech/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter17/exercises/fintech/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/exercises/fintech/accounts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter17/exercises/write_accounts_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/exercises/write_accounts_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter17/readExcelExample.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/readExcelExample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter17/sample.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/sample.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter17/writeExcelExample.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/writeExcelExample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter18/exercises/regex_solutions.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter21/exercises/regex_solutions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter18/regex_examples.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter21/regex_examples.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter21/create5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/create5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter21/delete4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/delete4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter21/exercise/create_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/exercise/create_tables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter21/exercise/fintech/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/exercise/fintech/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter21/exercise/fintech/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/exercise/fintech/accounts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter21/exercise/write_account_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/exercise/write_account_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter21/insert2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/insert2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter21/query1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/query1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter21/update3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/update3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/exercises/accounts-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/exercises/accounts-app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/exercises/accounts.logging.config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/exercises/accounts.logging.config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/exercises/fintech/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/exercises/fintech/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/exercises/fintech/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/exercises/fintech/accounts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging.config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging.config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging_example1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging_example10.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging_example11.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example11.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging_example2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging_example3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging_example4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging_example5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging_example6.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging_example7.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging_example8.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/logging_example9.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter23/printer_lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/printer_lib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter25/exercises/printer_threading_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/exercises/printer_threading_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter25/threads.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter25/threads1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter25/threads2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter25/threads3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter25/threads4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter25/threads5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter25/threads6.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter25/threads7.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter25/timer_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/timer_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter26/exercises/multiprocessing_factorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/exercises/multiprocessing_factorial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing6.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing7.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter27/barriers-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/barriers-app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter27/barriers-app2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/barriers-app2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter27/cond-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/cond-app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter27/events-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/events-app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter27/events-app2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/events-app2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter27/exercises/stack/Stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/exercises/stack/Stack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter27/exercises/stack/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/exercises/stack/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter27/exercises/stack_multithreaded_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/exercises/stack_multithreaded_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter27/locks-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/locks-app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter27/queue-example.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/queue-example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter27/semaphore-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/semaphore-app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter28/exercises/factorial_future.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/exercises/factorial_future.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter28/future1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter28/future2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter28/future3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter28/future4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter28/future5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter28/future6.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter28/future7.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter29/asyncioapp1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter32/asyncioapp1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter29/asyncioapp2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter32/asyncioapp2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter29/asyncioapp3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter32/asyncioapp3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter29/asyncioapp4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter32/asyncioapp4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter29/exercises/async_factorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter32/exercises/async_factorial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter30/exercises/stocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter35/exercises/stocks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter30/reactive1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter34/reactive1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter30/reactive2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter34/reactive2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter30/reactive3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter35/reactive_ops1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter30/reactive4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter35/reactive_ops2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter30/reactive5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter35/reactive_ops3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter30/reactive6.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter35/reactive_ops4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter30/reactive7.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter35/reactive_ops5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter30/reactive8a.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter34/reactive3a.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter30/reactive8b.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter34/reactive3b.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter30/reactive9.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter34/reactive4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter32/MyHttpServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter37/MyHttpServer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter32/MyTCPHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter37/MyTCPHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter32/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter37/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter32/exercises/SimpleClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter37/exercises/SimpleClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter32/exercises/SimpleServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter37/exercises/SimpleServer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter32/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter37/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter33/hello_flask_world.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter38/hello_flask_world.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter33/hello_flask_world2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter38/hello_flask_world2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter34/bookshop_service1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter39/bookshop_service1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter34/bookshop_service2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter39/bookshop_service2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/FrameAndPanelApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter7/FrameAndPanelApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/HelloNamedApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/HelloNamedApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/SimpleEventHandlerApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/SimpleEventHandlerApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/SimpleHelloWorldApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter7/SimpleHelloWorldApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/exercises/BirthdayGUIApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/exercises/BirthdayGUIApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/exercises/TicTacToeGuiApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/exercises/TicTacToeGuiApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter8/HelloWorldGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter11/HelloWorldGame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter8/MousePlayApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter11/MousePlayApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter9/StarshipMeteors.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/StarshipMeteors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter9/meteor.png" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/meteor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter9/starship.png" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/starship.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,17 +177,92 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter33/hello_flask_world.py">
+        <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops3.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+              <folding>
+                <element signature="e#53#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter7/SimpleHelloWorldApp.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter8/SimpleEventHandlerApp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter8/HelloNamedApp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter33/hello_flask_world2.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/chapter7/FrameAndPanelApp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" selection-start-line="32" selection-end-line="34" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter34/reactive2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -138,11 +376,6 @@
               <item name="furtherpython3" type="b2602c69:ProjectViewProjectNode" />
               <item name="furtherpython3" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="furtherpython3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="furtherpython3" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter33" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -173,10 +406,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/chapter8" />
+      <recent name="$PROJECT_DIR$/chapter35" />
       <recent name="$PROJECT_DIR$/chapter34" />
       <recent name="$PROJECT_DIR$/chapter4" />
       <recent name="$PROJECT_DIR$/chapter28" />
-      <recent name="$PROJECT_DIR$/chapter16" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -317,13 +550,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556277447535</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Moved mock">
-      <created>1557337708396</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1557337708396</updated>
     </task>
     <task id="LOCAL-00022" summary="Moved excel exmaples">
       <created>1557337736822</created>
@@ -661,7 +887,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560960624086</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Fixed typo in print statement">
+      <created>1561016454724</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1561016454724</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -698,14 +931,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1310" y="26" width="1450" height="1363" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21553534" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21553534" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32830188" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24154209" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24154209" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37207547" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -720,7 +952,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added exercieses solution and general tidying" />
     <MESSAGE value="changed output format" />
     <MESSAGE value="Added simple Flask web service examples" />
     <MESSAGE value="Tidying Flask web service examples" />
@@ -745,18 +976,19 @@
     <MESSAGE value="Split pygame chapter into two" />
     <MESSAGE value="Removed unused import" />
     <MESSAGE value="Corrected comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected comment" />
+    <MESSAGE value="Fixed typo in print statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed typo in print statement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter15/streams_options.py</url>
+          <url>file://$PROJECT_DIR$/chapter18/streams_options.py</url>
           <line>4</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/chapter21/exercise/write_account_info.py</url>
+          <url>file://$PROJECT_DIR$/chapter24/exercise/write_account_info.py</url>
           <line>22</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -764,14 +996,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter21/create5.py">
+    <entry file="file://$PROJECT_DIR$/chapter24/create5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter17/exercises/write_accounts_file.py">
+    <entry file="file://$PROJECT_DIR$/chapter20/exercises/write_accounts_file.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="47" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="47" />
@@ -781,7 +1013,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter21/exercise/write_account_info.py">
+    <entry file="file://$PROJECT_DIR$/chapter24/exercise/write_account_info.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
@@ -965,35 +1197,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/SimpleEventHandlerApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter30/reactive3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter30/reactive9.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter34/bookshop_service1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter34/bookshop_service2.py">
+    <entry file="file://$PROJECT_DIR$/chapter39/bookshop_service2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="76" column="29" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
@@ -1003,103 +1207,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/FrameAndPanelApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="34" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/SimpleHelloWorldApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter6/HelloNamedApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter9/StarshipMeteors.py">
+    <entry file="file://$PROJECT_DIR$/chapter12/StarshipMeteors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter15/streams_options.py">
+    <entry file="file://$PROJECT_DIR$/chapter18/streams_options.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter15/text_streams.py">
+    <entry file="file://$PROJECT_DIR$/chapter18/text_streams.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter30/reactive2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter30/reactive1.py">
+    <entry file="file://$PROJECT_DIR$/chapter34/reactive1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="37" column="39" selection-start-line="3" selection-end-line="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter30/reactive4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter30/reactive5.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter30/reactive6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-          <folding>
-            <element signature="e#53#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter30/reactive7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter30/reactive8a.py">
+    <entry file="file://$PROJECT_DIR$/chapter34/reactive3a.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter30/reactive8b.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter32/MyHttpServer.py">
+    <entry file="file://$PROJECT_DIR$/chapter37/MyHttpServer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -1108,7 +1247,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter32/server.py">
+    <entry file="file://$PROJECT_DIR$/chapter37/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
@@ -1122,15 +1261,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter33/hello_flask_world.py">
+    <entry file="file://$PROJECT_DIR$/chapter38/hello_flask_world.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chapter33/hello_flask_world2.py">
+    <entry file="file://$PROJECT_DIR$/chapter38/hello_flask_world2.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter39/bookshop_service1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter34/reactive4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter34/reactive3b.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter34/reactive2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops3.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="e#53#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter7/SimpleHelloWorldApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter8/SimpleEventHandlerApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter8/HelloNamedApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chapter7/FrameAndPanelApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
