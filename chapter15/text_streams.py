@@ -17,7 +17,7 @@ text_stream = io.TextIOWrapper(br, encoding='utf-8')
 print('text_stream', text_stream)
 print('text_stream.readable():', text_stream.readable())
 print('text_stream.seekable()', text_stream.seekable())
-print('text_stream.wriateable()', text_stream.writable())
+print('text_stream.writeable()', text_stream.writable())
 
 print(text_stream.read())
 
