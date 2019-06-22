@@ -61,66 +61,28 @@ class PyDrawFrame(wx.Frame):
                          size=(300, 200))
         self.vertical_box_sizer = wx.BoxSizer(wx.VERTICAL)
         self.SetSizer(self.vertical_box_sizer)
+
+        # Set the initial mode
         self.set_square_mode()
-        self._setup_menubar()
-        self._setup_toolbar()
-        self._setup_drawing_panel()
-        self.Centre()
-
-    def _setup_menubar(self):
-        self.menubar = wx.MenuBar()
-        fileMenu = wx.Menu()
-        newMenuItem = wx.MenuItem(fileMenu, wx.ID_NEW, text="New", kind=wx.ITEM_NORMAL)
-        newMenuItem.SetBitmap(wx.Bitmap("new.gif"))
-        fileMenu.Append(newMenuItem)
-        loadMenuItem = wx.MenuItem(fileMenu, wx.ID_OPEN, text="Open", kind=wx.ITEM_NORMAL)
-        loadMenuItem.SetBitmap(wx.Bitmap("load.gif"))
-        fileMenu.Append(loadMenuItem)
-
-        fileMenu.AppendSeparator()
-        saveMenuItem = wx.MenuItem(fileMenu, wx.ID_SAVE, text="Save", kind=wx.ITEM_NORMAL)
-        saveMenuItem.SetBitmap(wx.Bitmap("save.gif"))
-        fileMenu.Append(saveMenuItem)
-
-        fileMenu.AppendSeparator()
-        quit = wx.MenuItem(fileMenu, wx.ID_EXIT, '&Quit\tCtrl+Q')
-
-        fileMenu.Append(quit)
-        self.menubar.Append(fileMenu, '&File')
-
-        drawingMenu = wx.Menu()
-        lineMenuItem = wx.MenuItem(drawingMenu, PyDrawFrame.LINE_ID, text="Line", kind=wx.ITEM_NORMAL)
-        drawingMenu.Append(lineMenuItem)
-        squareMenuItem = wx.MenuItem(drawingMenu, PyDrawFrame.SQUARE_ID, text="Square", kind=wx.ITEM_NORMAL)
-        drawingMenu.Append(squareMenuItem)
-        circleMenuItem = wx.MenuItem(drawingMenu, PyDrawFrame.CIRCLE_ID, text="Circle", kind=wx.ITEM_NORMAL)
-        drawingMenu.Append(circleMenuItem)
-        textMenuItem = wx.MenuItem(drawingMenu, PyDrawFrame.TEXT_ID, text="Text", kind=wx.ITEM_NORMAL)
-        drawingMenu.Append(textMenuItem)
-
-        self.menubar.Append(drawingMenu, '&Drawing')
+        # self._setup_menubar()
+        # Zet up the menu bar
+        self.menubar = PyDrawMenuBar()
         self.SetMenuBar(self.menubar)
         self.Bind(wx.EVT_MENU, self.menu_handler)
 
-    def _setup_toolbar(self):
-        self.toolbar = wx.ToolBar(self, -1)
-        self.toolbar.AddTool(toolId=wx.ID_NEW, label="New", bitmap=wx.Bitmap("new.gif"), shortHelp='Open drawing',
-                             kind=wx.ITEM_NORMAL)
-        self.toolbar.AddTool(toolId=wx.ID_OPEN, label="Open", bitmap=wx.Bitmap("load.gif"), shortHelp='Open drawing',
-                             kind=wx.ITEM_NORMAL)
-        self.toolbar.AddTool(toolId=wx.ID_SAVE, label="Save", bitmap=wx.Bitmap("save.gif"), shortHelp='Save drawing',
-                             kind=wx.ITEM_NORMAL)
-        self.toolbar.Realize()
+        # Set up the toolbar
+        self.toolbar = PyDrawToolBar(self)
         self.vertical_box_sizer.Add(self.toolbar,
                                     wx.ID_ANY,
                                     wx.EXPAND | wx.ALL, )
 
-    def _setup_drawing_panel(self):
-        self.drawing_panel = Drawing(self)
+        # Setup drawing panel
+        self.drawing_panel = DrawingPanel(self)
         # Add the Panel to the Frames Sizer
         self.vertical_box_sizer.Add(self.drawing_panel,
                                     wx.ID_ANY,
                                     wx.EXPAND | wx.ALL)
+        self.Centre()
 
     def menu_handler(self, event):
         id = event.GetId()
@@ -164,11 +126,60 @@ class PyDrawFrame(wx.Frame):
     def clear_drawing(self):
         self.drawing_panel.clear()
 
+class PyDrawMenuBar(wx.MenuBar):
 
-class Drawing(wx.Panel):
+    def __init__(self):
+        super().__init__()
+        fileMenu = wx.Menu()
+        newMenuItem = wx.MenuItem(fileMenu, wx.ID_NEW, text="New", kind=wx.ITEM_NORMAL)
+        newMenuItem.SetBitmap(wx.Bitmap("new.gif"))
+        fileMenu.Append(newMenuItem)
+        loadMenuItem = wx.MenuItem(fileMenu, wx.ID_OPEN, text="Open", kind=wx.ITEM_NORMAL)
+        loadMenuItem.SetBitmap(wx.Bitmap("load.gif"))
+        fileMenu.Append(loadMenuItem)
+
+        fileMenu.AppendSeparator()
+        saveMenuItem = wx.MenuItem(fileMenu, wx.ID_SAVE, text="Save", kind=wx.ITEM_NORMAL)
+        saveMenuItem.SetBitmap(wx.Bitmap("save.gif"))
+        fileMenu.Append(saveMenuItem)
+
+        fileMenu.AppendSeparator()
+        quit = wx.MenuItem(fileMenu, wx.ID_EXIT, '&Quit\tCtrl+Q')
+
+        fileMenu.Append(quit)
+        self.Append(fileMenu, '&File')
+
+        drawingMenu = wx.Menu()
+        lineMenuItem = wx.MenuItem(drawingMenu, PyDrawFrame.LINE_ID, text="Line", kind=wx.ITEM_NORMAL)
+        drawingMenu.Append(lineMenuItem)
+        squareMenuItem = wx.MenuItem(drawingMenu, PyDrawFrame.SQUARE_ID, text="Square", kind=wx.ITEM_NORMAL)
+        drawingMenu.Append(squareMenuItem)
+        circleMenuItem = wx.MenuItem(drawingMenu, PyDrawFrame.CIRCLE_ID, text="Circle", kind=wx.ITEM_NORMAL)
+        drawingMenu.Append(circleMenuItem)
+        textMenuItem = wx.MenuItem(drawingMenu, PyDrawFrame.TEXT_ID, text="Text", kind=wx.ITEM_NORMAL)
+        drawingMenu.Append(textMenuItem)
+
+        self.Append(drawingMenu, '&Drawing')
+
+
+
+class PyDrawToolBar(wx.ToolBar):
 
     def __init__(self, parent):
         super().__init__(parent)
+        self.AddTool(toolId=wx.ID_NEW, label="New", bitmap=wx.Bitmap("new.gif"), shortHelp='Open drawing',
+                             kind=wx.ITEM_NORMAL)
+        self.AddTool(toolId=wx.ID_OPEN, label="Open", bitmap=wx.Bitmap("load.gif"), shortHelp='Open drawing',
+                             kind=wx.ITEM_NORMAL)
+        self.AddTool(toolId=wx.ID_SAVE, label="Save", bitmap=wx.Bitmap("save.gif"), shortHelp='Save drawing',
+                             kind=wx.ITEM_NORMAL)
+        self.Realize()
+
+
+class DrawingPanel(wx.Panel):
+
+    def __init__(self, parent):
+        super().__init__(parent, -1)
         self.SetBackgroundColour(wx.Colour(255, 255, 255))
         self.contents = []
         self.parent = parent
