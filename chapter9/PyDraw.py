@@ -1,4 +1,5 @@
 import wx
+from abc import abstractmethod
 
 class PyDraw_Constants:
     LINE_ID = 100
@@ -18,6 +19,10 @@ class Figure(wx.Panel):
         wx.Panel.__init__(self, parent, id=id, pos=pos, size=size, style=style)
         self.point = pos
         self.size = size
+
+    @abstractmethod
+    def on_paint(self, dc):
+        pass
 
 
 class Square(Figure):
@@ -56,7 +61,6 @@ class Text(Figure):
 
 
 class PyDrawFrame(wx.Frame):
-
     """ Main Frame responsible for the
     layout of the UI."""
 
@@ -94,6 +98,7 @@ class PyDrawFrame(wx.Frame):
                                     wx.EXPAND | wx.ALL)
         self.Centre()
 
+
 class PyDrawMenuBar(wx.MenuBar):
 
     def __init__(self):
@@ -128,6 +133,19 @@ class PyDrawMenuBar(wx.MenuBar):
         drawingMenu.Append(textMenuItem)
 
         self.Append(drawingMenu, '&Drawing')
+
+
+class PyDrawToolBar(wx.ToolBar):
+
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.AddTool(toolId=wx.ID_NEW, label="New", bitmap=wx.Bitmap("new.gif"), shortHelp='Open drawing',
+                     kind=wx.ITEM_NORMAL)
+        self.AddTool(toolId=wx.ID_OPEN, label="Open", bitmap=wx.Bitmap("load.gif"), shortHelp='Open drawing',
+                     kind=wx.ITEM_NORMAL)
+        self.AddTool(toolId=wx.ID_SAVE, label="Save", bitmap=wx.Bitmap("save.gif"), shortHelp='Save drawing',
+                     kind=wx.ITEM_NORMAL)
+        self.Realize()
 
 
 class PyDrawController:
@@ -181,19 +199,6 @@ class PyDrawController:
             self.set_text_mode()
         else:
             print('Unknown option', id)
-
-
-class PyDrawToolBar(wx.ToolBar):
-
-    def __init__(self, parent):
-        super().__init__(parent)
-        self.AddTool(toolId=wx.ID_NEW, label="New", bitmap=wx.Bitmap("new.gif"), shortHelp='Open drawing',
-                             kind=wx.ITEM_NORMAL)
-        self.AddTool(toolId=wx.ID_OPEN, label="Open", bitmap=wx.Bitmap("load.gif"), shortHelp='Open drawing',
-                             kind=wx.ITEM_NORMAL)
-        self.AddTool(toolId=wx.ID_SAVE, label="Save", bitmap=wx.Bitmap("save.gif"), shortHelp='Save drawing',
-                             kind=wx.ITEM_NORMAL)
-        self.Realize()
 
 
 class DrawingPanel(wx.Panel):
