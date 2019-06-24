@@ -1,7 +1,7 @@
 import wx
 from abc import abstractmethod
 
-class PyDraw_Constants:
+class PyDrawConstants:
     LINE_ID = 100
     SQUARE_ID = 102
     CIRCLE_ID = 103
@@ -46,10 +46,10 @@ class Circle(Figure):
     def __init__(self, parent, pos, size):
         super().__init__(parent=parent, pos=pos, size=wx.Size(size, size))
         self.radius = (size - 10) / 2
+        self.circle_center = wx.Point(self.point.x + self.radius, self.point.y + self.radius)
 
     def on_paint(self, dc):
-        circle_center = wx.Point(self.point.x + self.radius, self.point.y + self.radius)
-        dc.DrawCircle(pt=circle_center, radius=self.radius)
+        dc.DrawCircle(pt=self.circle_center, radius=self.radius)
 
 
 class Text(Figure):
@@ -72,30 +72,31 @@ class PyDrawFrame(wx.Frame):
         # Set up the controller
         self.controller = PyDrawController(self)
 
-        # Setup drawing panel
-        self.drawing_panel = DrawingPanel(self, self.controller.get_mode)
-        self.drawing_controller = self.drawing_panel.controller
-
         # Set up the layout fo the UI
         self.vertical_box_sizer = wx.BoxSizer(wx.VERTICAL)
         self.SetSizer(self.vertical_box_sizer)
 
         # Set up the menu bar
-        self.menubar = PyDrawMenuBar()
-        self.SetMenuBar(self.menubar)
-
-        self.Bind(wx.EVT_MENU, self.controller.menu_handler)
+        self.SetMenuBar(PyDrawMenuBar())
 
         # Set up the toolbar
-        self.toolbar = PyDrawToolBar(self)
-        self.vertical_box_sizer.Add(self.toolbar,
+        self.vertical_box_sizer.Add(PyDrawToolBar(self),
                                     wx.ID_ANY,
                                     wx.EXPAND | wx.ALL, )
+
+
+        # Setup drawing panel
+        self.drawing_panel = DrawingPanel(self, self.controller.get_mode)
+        self.drawing_controller = self.drawing_panel.controller
 
         # Add the Panel to the Frames Sizer
         self.vertical_box_sizer.Add(self.drawing_panel,
                                     wx.ID_ANY,
                                     wx.EXPAND | wx.ALL)
+
+        # Set up the command event handling for the menu bar and tool bar
+        self.Bind(wx.EVT_MENU, self.controller.command_menu_handler)
+
         self.Centre()
 
 
@@ -123,13 +124,13 @@ class PyDrawMenuBar(wx.MenuBar):
         self.Append(fileMenu, '&File')
 
         drawingMenu = wx.Menu()
-        lineMenuItem = wx.MenuItem(drawingMenu, PyDraw_Constants.LINE_ID, text="Line", kind=wx.ITEM_NORMAL)
+        lineMenuItem = wx.MenuItem(drawingMenu, PyDrawConstants.LINE_ID, text="Line", kind=wx.ITEM_NORMAL)
         drawingMenu.Append(lineMenuItem)
-        squareMenuItem = wx.MenuItem(drawingMenu, PyDraw_Constants.SQUARE_ID, text="Square", kind=wx.ITEM_NORMAL)
+        squareMenuItem = wx.MenuItem(drawingMenu, PyDrawConstants.SQUARE_ID, text="Square", kind=wx.ITEM_NORMAL)
         drawingMenu.Append(squareMenuItem)
-        circleMenuItem = wx.MenuItem(drawingMenu, PyDraw_Constants.CIRCLE_ID, text="Circle", kind=wx.ITEM_NORMAL)
+        circleMenuItem = wx.MenuItem(drawingMenu, PyDrawConstants.CIRCLE_ID, text="Circle", kind=wx.ITEM_NORMAL)
         drawingMenu.Append(circleMenuItem)
-        textMenuItem = wx.MenuItem(drawingMenu, PyDraw_Constants.TEXT_ID, text="Text", kind=wx.ITEM_NORMAL)
+        textMenuItem = wx.MenuItem(drawingMenu, PyDrawConstants.TEXT_ID, text="Text", kind=wx.ITEM_NORMAL)
         drawingMenu.Append(textMenuItem)
 
         self.Append(drawingMenu, '&Drawing')
@@ -150,31 +151,31 @@ class PyDrawToolBar(wx.ToolBar):
 
 class PyDrawController:
 
-    def __init__(self, frame):
-        self.frame = frame
+    def __init__(self, view):
+        self.view = view
         # Set the initial mode
-        self.mode = PyDraw_Constants.SQUARE_MODE
+        self.mode = PyDrawConstants.SQUARE_MODE
 
     def set_circle_mode(self):
-        self.mode = PyDraw_Constants.CIRCLE_MODE
+        self.mode = PyDrawConstants.CIRCLE_MODE
 
     def set_line_mode(self):
-        self.mode = PyDraw_Constants.LINE_MODE
+        self.mode = PyDrawConstants.LINE_MODE
 
     def set_square_mode(self):
-        self.mode = PyDraw_Constants.SQUARE_MODE
+        self.mode = PyDrawConstants.SQUARE_MODE
 
     def set_text_mode(self):
-        self.mode = PyDraw_Constants.TEXT_MODE
+        self.mode = PyDrawConstants.TEXT_MODE
 
     def clear_drawing(self):
-        self.frame.drawing_controller.clear()
+        self.view.drawing_controller.clear()
 
     def get_mode(self):
         return self.mode
 
-    def menu_handler(self, event):
-        id = event.GetId()
+    def command_menu_handler(self, command_event):
+        id = command_event.GetId()
         if id == wx.ID_NEW:
             print('Clear the drawing area')
             self.clear_drawing()
@@ -184,17 +185,17 @@ class PyDrawController:
             print('Save a drawing file')
         elif id == wx.ID_EXIT:
             print('Quite the application')
-            self.frame.Close()
-        elif id == PyDraw_Constants.LINE_ID:
+            self.view.Close()
+        elif id == PyDrawConstants.LINE_ID:
             print('set drawing mode to line')
             self.set_line_mode()
-        elif id == PyDraw_Constants.SQUARE_ID:
+        elif id == PyDrawConstants.SQUARE_ID:
             print('set drawing mode to square')
             self.set_square_mode()
-        elif id == PyDraw_Constants.CIRCLE_ID:
+        elif id == PyDrawConstants.CIRCLE_ID:
             print('set drawing mode to circle')
             self.set_circle_mode()
-        elif id == PyDraw_Constants.TEXT_ID:
+        elif id == PyDrawConstants.TEXT_ID:
             print('set drawing mode to Text')
             self.set_text_mode()
         else:
@@ -206,9 +207,8 @@ class DrawingPanel(wx.Panel):
     def __init__(self, parent, get_mode):
         super().__init__(parent, -1)
         self.SetBackgroundColour(wx.Colour(255, 255, 255))
-        self.model = DrawingModel(self)
+        self.model = DrawingModel()
         self.controller = DrawingController(self, self.model, get_mode)
-        self.parent = parent
         self.Bind(wx.EVT_PAINT, self.on_paint)
         self.Bind(wx.EVT_LEFT_DOWN, self.controller.on_mouse_click)
 
@@ -221,8 +221,7 @@ class DrawingPanel(wx.Panel):
 
 class DrawingModel:
 
-    def __init__(self, panel):
-        self.panel = panel
+    def __init__(self):
         self.contents = []
 
     def clear_figures(self):
@@ -234,8 +233,8 @@ class DrawingModel:
 
 class DrawingController:
 
-    def __init__(self, panel, model, get_mode):
-        self.panel = panel
+    def __init__(self, view, model, get_mode):
+        self.view = view
         self.model = model
         self.get_mode = get_mode
 
@@ -244,19 +243,19 @@ class DrawingController:
         self.add(self.get_mode(), point)
 
     def add(self, mode, point, size=30):
-        if mode == PyDraw_Constants.SQUARE_MODE:
-            fig = Square(self.panel, point, wx.Size(size, size))
-        elif mode == PyDraw_Constants.CIRCLE_MODE:
-            fig = Circle(self.panel, point, size)
-        elif mode == PyDraw_Constants.TEXT_MODE:
-            fig = Text(self.panel, point, size)
-        elif mode == PyDraw_Constants.LINE_MODE:
-            fig = Line(self.panel, point, size)
+        if mode == PyDrawConstants.SQUARE_MODE:
+            fig = Square(self.view, point, wx.Size(size, size))
+        elif mode == PyDrawConstants.CIRCLE_MODE:
+            fig = Circle(self.view, point, size)
+        elif mode == PyDrawConstants.TEXT_MODE:
+            fig = Text(self.view, point, size)
+        elif mode == PyDrawConstants.LINE_MODE:
+            fig = Line(self.view, point, size)
         self.model.add_figure(fig)
 
     def clear(self):
         self.model.clear_figures()
-        self.panel.Refresh()
+        self.view.Refresh()
 
 
 class PyDrawApp(wx.App):
