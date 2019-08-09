@@ -2,6 +2,7 @@ import pymysql
 
 # Open database connection
 connection = pymysql.connect('localhost', 'user', 'password', 'uni-database')
+connection.autocommit(False)
 
 # prepare a cursor object using cursor() method
 cursor = connection.cursor()
