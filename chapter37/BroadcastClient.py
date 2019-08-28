@@ -1,9 +1,11 @@
 import socket
 import sys
 
-# Create a UDP socket
+# Create a UDP socket - note use of socket.SOCK_DGRAM
+# Indicates braodcast datagram
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
+# Set the server address
 server_address = ('localhost', 10000)
 message = b'This is the message.  It will be repeated.'
 

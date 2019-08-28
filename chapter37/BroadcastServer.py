@@ -1,7 +1,8 @@
 import socket
 import sys
 
-# Create a UDP socket
+# Create a UDP socket - note use of socket.SOCK_DGRAM
+# this indicaztes its a broadcast datagram socket not a TCP/IP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Bind the socket to the port
