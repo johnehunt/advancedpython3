@@ -1,3 +1,5 @@
+""" Illustrates calculating the size of various types """
+
 import sys
 
 class Person:
@@ -7,7 +9,7 @@ class Person:
         self.age = age
 
 
-print('int', sys.getsizeof(1), 'bytes')
+print('int:', sys.getsizeof(1), 'bytes')
 print('float:', sys.getsizeof(1.0))
 
 print('tuple:', sys.getsizeof((1, 2, 3)))
