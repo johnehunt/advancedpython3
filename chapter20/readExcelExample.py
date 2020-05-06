@@ -1,3 +1,6 @@
+""" Example illustrating reading EXCEL files using the
+ openpyxl library. """
+
 from openpyxl import load_workbook
 
 
