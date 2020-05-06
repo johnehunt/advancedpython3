@@ -1,3 +1,5 @@
+""" Example illustrating create different colours using RGB codes """
+
 import wx
 import wx.grid
 
@@ -30,7 +32,7 @@ add_blue = False
 # Generate RGB colours
 for i in range(0, MAX_ROWS):
     # Set the colour and text
-    grid.SetCellValue(i, 0, 'RGB(' + str(red) + ', ' +  str(green) + ', ' +  str(blue) + ')')
+    grid.SetCellValue(i, 0, 'RGB(' + str(red) + ', ' + str(green) + ', ' + str(blue) + ')')
     # Solid version of colour
     grid.SetCellBackgroundColour(i, 1, wx.Colour(red, green, blue))
     # Add a bit of transparency 75%, 50% and 25%
@@ -50,7 +52,6 @@ for i in range(0, MAX_ROWS):
         add_blue = True
     if add_blue:
         blue = blue + 30
-
 
 # Run the GUI application
 frame.Show()
