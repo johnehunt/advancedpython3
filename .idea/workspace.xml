@@ -1,271 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0629a549-70f2-4599-8251-4cab35ded4ae" name="Default Changelist" comment="">
+    <list default="true" id="0629a549-70f2-4599-8251-4cab35ded4ae" name="Default Changelist" comment="Added connction example and updated transactional examples">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter11/calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/calculator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter11/exercises/accounts-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/exercises/accounts-app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter11/exercises/fintech/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/exercises/fintech/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter11/exercises/fintech/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/exercises/fintech/accounts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter11/exercises/test_CurrentAccount.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/exercises/test_CurrentAccount.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter11/external_module/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/external_module/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter11/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter11/test_calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/test_calculator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter11/testing-functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter14/testing-functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/exercises/deck_of_cards.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/exercises/deck_of_cards.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/external_module/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/external_module/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/mock_test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/mock_test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/mock_test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/mock_test4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/mock_test5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/mock_test6.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/mock_test7.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/mock_test7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter12/people.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter15/people.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/directories1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/directories1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/exercise/create_file_with_date.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/exercise/create_file_with_date.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/exercise/load_date_from_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/exercise/load_date_from_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/files1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/files1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/files2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/files2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/files3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/files3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/files4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/files4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/my-new-file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/my-new-file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/myfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/myfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/paths-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/paths-app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/rand-file-acces.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/rand-file-acces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/tempfiles1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/tempfiles1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/text.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/textfile1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/textfile1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/textfile2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/textfile2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter14/textfileexample.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter17/textfileexample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter15/binary_streams.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/binary_streams.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter15/myfile.dat" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/myfile.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter15/myfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/myfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter15/raw_io_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/raw_io_example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter15/sockets.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/sockets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter15/starship.png" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/starship.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter15/stdinout_examples.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/stdinout_examples.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter15/streams_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/streams_options.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter15/text_streams.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/text_streams.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter16/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter16/csvdictexample.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/csvdictexample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter16/csvexample.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/csvexample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter16/exercises/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/exercises/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter16/exercises/fintech/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/exercises/fintech/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter16/exercises/fintech/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/exercises/fintech/accounts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter16/exercises/write_accounts_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/exercises/write_accounts_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter16/names.csv" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/names.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter16/sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/chapter19/sample.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter17/exercises/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/exercises/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter17/exercises/accounts.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/exercises/accounts.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter17/exercises/fintech/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/exercises/fintech/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter17/exercises/fintech/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/exercises/fintech/accounts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter17/exercises/write_accounts_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/exercises/write_accounts_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter17/readExcelExample.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/readExcelExample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter17/sample.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/sample.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter17/writeExcelExample.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter20/writeExcelExample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter18/exercises/regex_solutions.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter21/exercises/regex_solutions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter18/regex_examples.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter21/regex_examples.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter21/create5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/create5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter21/delete4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/delete4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter21/exercise/create_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/exercise/create_tables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter21/exercise/fintech/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/exercise/fintech/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter21/exercise/fintech/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/exercise/fintech/accounts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter21/exercise/write_account_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/exercise/write_account_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter21/insert2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/insert2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter21/query1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/query1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter21/update3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/update3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/exercises/accounts-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/exercises/accounts-app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/exercises/accounts.logging.config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/exercises/accounts.logging.config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/exercises/fintech/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/exercises/fintech/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/exercises/fintech/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/exercises/fintech/accounts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging.config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging.config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging_example1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging_example10.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging_example11.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging_example2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging_example3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging_example4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging_example5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging_example6.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging_example7.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging_example8.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/logging_example9.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/logging_example9.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter23/printer_lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter26/printer_lib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter25/exercises/printer_threading_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/exercises/printer_threading_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter25/threads.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter25/threads1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter25/threads2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter25/threads3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter25/threads4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter25/threads5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter25/threads6.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter25/threads7.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/threads7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter25/timer_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter28/timer_example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter26/exercises/multiprocessing_factorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/exercises/multiprocessing_factorial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing6.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter26/multiprocessing7.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter29/multiprocessing7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter27/barriers-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/barriers-app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter27/barriers-app2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/barriers-app2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter27/cond-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/cond-app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter27/events-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/events-app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter27/events-app2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/events-app2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter27/exercises/stack/Stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/exercises/stack/Stack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter27/exercises/stack/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/exercises/stack/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter27/exercises/stack_multithreaded_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/exercises/stack_multithreaded_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter27/locks-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/locks-app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter27/queue-example.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/queue-example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter27/semaphore-app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter30/semaphore-app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter28/exercises/factorial_future.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/exercises/factorial_future.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter28/future1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter28/future2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter28/future3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter28/future4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter28/future5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter28/future6.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter28/future7.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter31/future7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter29/asyncioapp1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter32/asyncioapp1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter29/asyncioapp2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter32/asyncioapp2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter29/asyncioapp3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter32/asyncioapp3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter29/asyncioapp4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter32/asyncioapp4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter29/exercises/async_factorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter32/exercises/async_factorial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter30/exercises/stocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter35/exercises/stocks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter30/reactive1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter34/reactive1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter30/reactive2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter34/reactive2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter30/reactive3.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter35/reactive_ops1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter30/reactive4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter35/reactive_ops2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter30/reactive5.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter35/reactive_ops3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter30/reactive6.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter35/reactive_ops4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter30/reactive7.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter35/reactive_ops5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter30/reactive8a.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter34/reactive3a.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter30/reactive8b.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter34/reactive3b.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter30/reactive9.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter34/reactive4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter32/MyHttpServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter37/MyHttpServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter32/MyTCPHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter37/MyTCPHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter32/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter37/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter32/exercises/SimpleClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter37/exercises/SimpleClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter32/exercises/SimpleServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter37/exercises/SimpleServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter32/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter37/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter33/hello_flask_world.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter38/hello_flask_world.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter33/hello_flask_world2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter38/hello_flask_world2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter34/bookshop_service1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter39/bookshop_service1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter34/bookshop_service2.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter39/bookshop_service2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter6/FrameAndPanelApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter7/FrameAndPanelApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter6/HelloNamedApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/HelloNamedApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter6/SimpleEventHandlerApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/SimpleEventHandlerApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter6/SimpleHelloWorldApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter7/SimpleHelloWorldApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter6/exercises/BirthdayGUIApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/exercises/BirthdayGUIApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter6/exercises/TicTacToeGuiApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/exercises/TicTacToeGuiApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter8/HelloWorldGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter11/HelloWorldGame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter8/MousePlayApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter11/MousePlayApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter9/StarshipMeteors.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/StarshipMeteors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter9/meteor.png" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/meteor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter9/starship.png" beforeDir="false" afterPath="$PROJECT_DIR$/chapter18/starship.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter12/StarshipMeteors.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter12/StarshipMeteors.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops3.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-              <folding>
-                <element signature="e#53#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops5.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter7/SimpleHelloWorldApp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter8/SimpleEventHandlerApp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter8/HelloNamedApp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chapter7/FrameAndPanelApp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" selection-start-line="32" selection-end-line="34" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter34/reactive2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -274,120 +17,24 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>print</find>
-      <find>...</find>
-      <find>timer</find>
-      <find>type</find>
-      <find>draw_circle(WIDTH / 2, HEIGHT / 2, 200)</find>
-      <find>red</find>
-      <find>boon</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/chapter12/mock_test7.py" />
-        <option value="$PROJECT_DIR$/chapter12/mock_test4.py" />
-        <option value="$PROJECT_DIR$/chapter12/exercises/deck_of_cards.py" />
-        <option value="$PROJECT_DIR$/chapter21/reactive_classes.py" />
-        <option value="$PROJECT_DIR$/chapter21/reactive1.py" />
-        <option value="$PROJECT_DIR$/chapter21/reactive2.py" />
-        <option value="$PROJECT_DIR$/chapter21/reactive7.py" />
-        <option value="$PROJECT_DIR$/chapter21/reactive3.py" />
-        <option value="$PROJECT_DIR$/chapter21/reactive6.py" />
-        <option value="$PROJECT_DIR$/chapter21/reactive9.py" />
-        <option value="$PROJECT_DIR$/chapter21/reactive8.py" />
-        <option value="$PROJECT_DIR$/chapter21/reactibe8a.py" />
-        <option value="$PROJECT_DIR$/chapter21/reactive8a.py" />
-        <option value="$PROJECT_DIR$/chapter21/reactive5.py" />
-        <option value="$PROJECT_DIR$/chapter21/exercises/stocks.py" />
-        <option value="$PROJECT_DIR$/chapter21/reactive4.py" />
-        <option value="$PROJECT_DIR$/chapter24/bookshop_service.py" />
-        <option value="$PROJECT_DIR$/chapter24/hello_flask_world2.py" />
-        <option value="$PROJECT_DIR$/chapter24/hello_flask_world.py" />
-        <option value="$PROJECT_DIR$/chapter24/bookshop_service1.py" />
-        <option value="$PROJECT_DIR$/chapter24/bookshop_service2.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/chapter4/exercises/fractal_trees.py" />
-        <option value="$PROJECT_DIR$/chapter6/exercises/TicTacToeGuiApp.py" />
-        <option value="$PROJECT_DIR$/chapter17/exercises/write_accounts_file.py" />
-        <option value="$PROJECT_DIR$/chapter21/exercise/create_tables.py" />
-        <option value="$PROJECT_DIR$/chapter21/exercise/fintech/accounts.py" />
-        <option value="$PROJECT_DIR$/chapter21/exercise/write_account_info.py" />
-        <option value="$PROJECT_DIR$/chapter2/rgb_colours.py" />
-        <option value="$PROJECT_DIR$/chapter4/circles-picture.py" />
-        <option value="$PROJECT_DIR$/chapter5/simple_plot1.py" />
-        <option value="$PROJECT_DIR$/chapter5/line_graph3.py" />
-        <option value="$PROJECT_DIR$/chapter5/scatter_plot6.py" />
-        <option value="$PROJECT_DIR$/chapter5/pie_chart5.py" />
-        <option value="$PROJECT_DIR$/chapter5/pie_chart_5a.py" />
-        <option value="$PROJECT_DIR$/chapter5/scatter_plot_trendline6.py" />
-        <option value="$PROJECT_DIR$/chapter5/bar_chart8c.py" />
-        <option value="$PROJECT_DIR$/chapter5/sub_plots9.py" />
-        <option value="$PROJECT_DIR$/chapter5/three-d-plot10.py" />
-        <option value="$PROJECT_DIR$/chapter30/reactive1.py" />
-        <option value="$PROJECT_DIR$/chapter30/reactive2.py" />
-        <option value="$PROJECT_DIR$/chapter30/reactive3.py" />
-        <option value="$PROJECT_DIR$/chapter30/reactive6.py" />
-        <option value="$PROJECT_DIR$/chapter30/reactive7.py" />
-        <option value="$PROJECT_DIR$/chapter30/reactive8a.py" />
-        <option value="$PROJECT_DIR$/chapter33/bookshop_service2.py" />
-        <option value="$PROJECT_DIR$/chapter6/HelloNamedApp.py" />
-        <option value="$PROJECT_DIR$/chapter15/text_streams.py" />
-        <option value="$PROJECT_DIR$/chapter30/reactive4.py" />
-        <option value="$PROJECT_DIR$/chapter30/reactive8b.py" />
-        <option value="$PROJECT_DIR$/chapter33/hello_flask_world.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/furtherpython3.iml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1310" />
-    <option name="y" value="26" />
-    <option name="width" value="1450" />
-    <option name="height" value="1363" />
-  </component>
+  <component name="ProjectId" id="1Ohc5qX5TQkCjp3okNAurGgyIDV" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="furtherpython3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="furtherpython3" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/chapter21/exercise" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/chapter9" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -399,6 +46,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chapter9" />
       <recent name="$PROJECT_DIR$/chapter21/exercise" />
       <recent name="$PROJECT_DIR$/chapter17" />
       <recent name="$PROJECT_DIR$/chapter12" />
@@ -412,20 +60,8 @@
       <recent name="$PROJECT_DIR$/chapter28" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.hello_flask_world2">
-    <configuration name="StarshipMeteors" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.StarshipMeteors">
+    <configuration name="PyDraw" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="furtherpython3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -437,7 +73,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter9/StarshipMeteors.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter9/PyDraw.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -446,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hello_flask_world2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SampleDCApp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="furtherpython3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -454,11 +90,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter33" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter33/hello_flask_world2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter7/SampleDCApp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -467,7 +103,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="reactive1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SimpleHelloWorldApp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="furtherpython3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -475,11 +111,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter30" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter30/reactive1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter7/SimpleHelloWorldApp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -488,7 +124,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="reactive4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="StarshipMeteors" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="furtherpython3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -496,11 +132,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter30" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter12" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter30/reactive4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter12/StarshipMeteors.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -509,7 +145,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="reactive6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TicTacToeGuiApp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="furtherpython3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -517,11 +153,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter30" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter8/exercises" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter30/reactive6.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter8/exercises/TicTacToeGuiApp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -530,13 +166,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.StarshipMeteors" />
+      <item itemvalue="Python.SampleDCApp" />
+      <item itemvalue="Python.SimpleHelloWorldApp" />
+      <item itemvalue="Python.TicTacToeGuiApp" />
+      <item itemvalue="Python.PyDraw" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.hello_flask_world2" />
-        <item itemvalue="Python.reactive4" />
-        <item itemvalue="Python.reactive1" />
         <item itemvalue="Python.StarshipMeteors" />
-        <item itemvalue="Python.reactive6" />
+        <item itemvalue="Python.PyDraw" />
+        <item itemvalue="Python.TicTacToeGuiApp" />
+        <item itemvalue="Python.SimpleHelloWorldApp" />
+        <item itemvalue="Python.SampleDCApp" />
       </list>
     </recent_temporary>
   </component>
@@ -550,160 +193,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556277447535</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Moved excel exmaples">
-      <created>1557337736822</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1557337736822</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Minor chnges to comments plus removing unused code">
-      <created>1557477882622</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1557477882622</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Minor chnges to comments plus removing unused code">
-      <created>1557482866879</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1557482866879</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Added a scatter plot">
-      <created>1557760212656</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1557760212656</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Added an example with a subplot and a figure">
-      <created>1557760338998</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1557760338998</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Tidied up the layout">
-      <created>1557762499909</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1557762499909</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Added a scatter plot example">
-      <created>1557826203089</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1557826203089</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Renaming files">
-      <created>1557826293634</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1557826293634</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Added a simple pie chart example">
-      <created>1557829175503</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1557829175503</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Added a simple line chart">
-      <created>1557829197639</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1557829197639</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Added a pie chart exmaple with shadow and exploded section">
-      <created>1557829217269</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1557829217269</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Renamed file">
-      <created>1557829233845</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1557829233845</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Added mock verification example">
-      <created>1557831760859</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1557831760859</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Added mock verification example">
-      <created>1557831784553</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1557831784553</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Changed to use pyplot API">
-      <created>1557837319154</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1557837319154</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Changed to use pyplot instead of plt">
-      <created>1557837336529</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1557837336529</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Extended the bar chart examples">
-      <created>1558013408139</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1558013408139</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Simplified the scatter chart example">
-      <created>1558013428950</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1558013428950</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Added sub plots and figure examples">
-      <created>1558087490207</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1558087490207</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Added mocking example sand mocking exercise">
-      <created>1558113106421</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1558113106421</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Added RxPy examples">
-      <created>1558368454034</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1558368454034</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Updated exmaples to use RxPy v 3">
-      <created>1558537373028</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1558537373028</updated>
     </task>
     <task id="LOCAL-00044" summary="Added exercieses solution and general tidying">
       <created>1558542914103</created>
@@ -894,90 +383,244 @@
       <option name="project" value="LOCAL" />
       <updated>1561016454724</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Refactoring directory structure to match changes to book">
+      <created>1561039311554</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1561039311555</updated>
+    </task>
+    <task id="LOCAL-00072" summary="First draft of PyDraw sample GUI application">
+      <created>1561053359046</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1561053359046</updated>
+    </task>
+    <task id="LOCAL-00073" summary="removed unused parameter">
+      <created>1561053768824</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1561053768824</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Refactored the application classes">
+      <created>1561221908849</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1561221908849</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Further Refactoring of the application classes">
+      <created>1561286834923</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1561286834923</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Added abstract method to the Figure class">
+      <created>1561287369754</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1561287369754</updated>
+    </task>
+    <task id="LOCAL-00077" summary="General tidying of code and names">
+      <created>1561370971066</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1561370971066</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Added a simple example of using a device context for graphic displays">
+      <created>1561390098049</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1561390098050</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Added connction example and updated transactional examples">
+      <created>1565347376618</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1565347376618</updated>
+    </task>
+    <task id="LOCAL-00080" summary="An example using MongoDB and pymongo to create a database, add documents, retrieve documents and delete documents.">
+      <created>1565606434726</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1565606434727</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Some profiling examples">
+      <created>1565634510421</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1565634510421</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Added pytest-mock example">
+      <created>1565691842272</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1565691842272</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Renamed TCP/IP Socket server and client examples">
+      <created>1567005275692</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1567005275692</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Added UDP Broadcast socket server and client">
+      <created>1567005298491</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1567005298491</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Added some additional comments">
+      <created>1567006028529</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1567006028530</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Messaging client example for use with ActiveMQ">
+      <created>1569857719648</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1569857719648</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Added examples using the latest ActiveMQ Artemis release">
+      <created>1569924016052</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1569924016052</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Added package comment">
+      <created>1588624082173</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1588624082173</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Increased tracer set">
+      <created>1588624108225</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1588624108225</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Reformatted and added introductory comment">
+      <created>1588757038755</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1588757038755</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Reformatted using IDE reformatter">
+      <created>1588757057539</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1588757057539</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Changed attribute names to following Python conventions">
+      <created>1589480068600</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1589480068600</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="pytest_in_mock_test6_py - 2019.05.17 at 16h 50m 07s.xml">
-      <configuration name="pytest in mock_test6.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_mock_test4_py - 2019.05.17 at 16h 55m 28s.xml">
-      <configuration name="pytest in mock_test4.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_mock_test4_py - 2019.05.17 at 16h 55m 40s.xml">
-      <configuration name="pytest in mock_test4.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_mock_test4_py - 2019.05.17 at 16h 56m 42s.xml">
-      <configuration name="pytest in mock_test4.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_mock_test4_py - 2019.05.17 at 16h 59m 46s.xml">
-      <configuration name="pytest in mock_test4.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_mock_test4_py - 2019.05.17 at 17h 00m 03s.xml">
-      <configuration name="pytest in mock_test4.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_mock_test5_py - 2019.05.17 at 17h 08m 42s.xml">
-      <configuration name="pytest in mock_test5.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_mock_test7_py - 2019.05.17 at 17h 12m 52s.xml">
-      <configuration name="pytest in mock_test7.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_mock_test7_py - 2019.05.17 at 17h 18m 43s.xml">
-      <configuration name="pytest in mock_test7.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_mock_test7_py - 2019.05.17 at 17h 19m 22s.xml">
-      <configuration name="pytest in mock_test7.py" configurationId="tests" />
-    </history-entry>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1310" y="26" width="1450" height="1363" extended-state="0" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21553534" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32830188" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24154209" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37207547" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32981133" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed output format" />
-    <MESSAGE value="Added simple Flask web service examples" />
-    <MESSAGE value="Tidying Flask web service examples" />
-    <MESSAGE value="Adding RGB colour example" />
-    <MESSAGE value="Added additional comments" />
-    <MESSAGE value="Updated title" />
-    <MESSAGE value="Added some additional comments" />
-    <MESSAGE value="Moved fractal tree exercise solution into separate directory" />
-    <MESSAGE value="Modified for two players" />
-    <MESSAGE value="Added a comment" />
-    <MESSAGE value="Reorganized directories to mirror changes in chapter order" />
-    <MESSAGE value="Sample solution for Excel exercise" />
-    <MESSAGE value="Accounts Excel file example" />
-    <MESSAGE value="Added database exercise sample solution" />
-    <MESSAGE value="Provided 75, 50 and 25% transparency examples" />
-    <MESSAGE value="Refined initial computer art example" />
-    <MESSAGE value="Updates to improve layout, comments and simplify examples" />
-    <MESSAGE value="Added further comments and print statements to examples" />
-    <MESSAGE value="Fixed printout type and added comments" />
-    <MESSAGE value="Fixed initial value string literal" />
-    <MESSAGE value="Separated the bookshop web services into a separate chapter" />
-    <MESSAGE value="Split pygame chapter into two" />
     <MESSAGE value="Removed unused import" />
     <MESSAGE value="Corrected comment" />
     <MESSAGE value="Fixed typo in print statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed typo in print statement" />
+    <MESSAGE value="Refactoring directory structure to match changes to book" />
+    <MESSAGE value="First draft of PyDraw sample GUI application" />
+    <MESSAGE value="removed unused parameter" />
+    <MESSAGE value="Refactored the application classes" />
+    <MESSAGE value="Further Refactoring of the application classes" />
+    <MESSAGE value="Added abstract method to the Figure class" />
+    <MESSAGE value="General tidying of code and names" />
+    <MESSAGE value="Added a simple example of using a device context for graphic displays" />
+    <MESSAGE value="Added connction example and updated transactional examples" />
+    <MESSAGE value="An example using MongoDB and pymongo to create a database, add documents, retrieve documents and delete documents." />
+    <MESSAGE value="Some profiling examples" />
+    <MESSAGE value="Added pytest-mock example" />
+    <MESSAGE value="Renamed TCP/IP Socket server and client examples" />
+    <MESSAGE value="Added UDP Broadcast socket server and client" />
+    <MESSAGE value="Added some additional comments" />
+    <MESSAGE value="Messaging client example for use with ActiveMQ" />
+    <MESSAGE value="Added examples using the latest ActiveMQ Artemis release" />
+    <MESSAGE value="Added package comment" />
+    <MESSAGE value="Increased tracer set" />
+    <MESSAGE value="Reformatted and added introductory comment" />
+    <MESSAGE value="Reformatted using IDE reformatter" />
+    <MESSAGE value="Changed attribute names to following Python conventions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed attribute names to following Python conventions" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1589" y="260" key="#StarshipMeteors" timestamp="1588770732263">
+      <screen x="43" y="23" width="2517" height="1417" />
+    </state>
+    <state x="1589" y="260" key="#StarshipMeteors/43.23.2517.1417@43.23.2517.1417" timestamp="1588770732263" />
+    <state x="1301" y="364" key="CommitChangelistDialog2" timestamp="1589480132052">
+      <screen x="43" y="23" width="2517" height="1417" />
+    </state>
+    <state x="1301" y="364" key="CommitChangelistDialog2/43.23.2517.1417@43.23.2517.1417" timestamp="1589480132052" />
+    <state x="1124" y="389" width="1200" height="800" key="DiffContextDialog" timestamp="1588624120245">
+      <screen x="43" y="23" width="2517" height="1417" />
+    </state>
+    <state x="1124" y="389" width="1200" height="800" key="DiffContextDialog/43.23.2517.1417@43.23.2517.1417" timestamp="1588624120245" />
+    <state width="1209" height="207" key="GridCell.Tab.0.bottom" timestamp="1589389634190">
+      <screen x="43" y="23" width="2517" height="1417" />
+    </state>
+    <state width="1209" height="207" key="GridCell.Tab.0.bottom/41.23.2519.1417@41.23.2519.1417" timestamp="1589387813583" />
+    <state width="1209" height="299" key="GridCell.Tab.0.bottom/42.23.2518.1417@42.23.2518.1417" timestamp="1589378561992" />
+    <state width="1209" height="207" key="GridCell.Tab.0.bottom/43.23.2517.1417@43.23.2517.1417" timestamp="1589389634190" />
+    <state width="1209" height="207" key="GridCell.Tab.0.center" timestamp="1589389634190">
+      <screen x="43" y="23" width="2517" height="1417" />
+    </state>
+    <state width="1209" height="207" key="GridCell.Tab.0.center/41.23.2519.1417@41.23.2519.1417" timestamp="1589387813582" />
+    <state width="1209" height="299" key="GridCell.Tab.0.center/42.23.2518.1417@42.23.2518.1417" timestamp="1589378561992" />
+    <state width="1209" height="207" key="GridCell.Tab.0.center/43.23.2517.1417@43.23.2517.1417" timestamp="1589389634190" />
+    <state width="1209" height="207" key="GridCell.Tab.0.left" timestamp="1589389634190">
+      <screen x="43" y="23" width="2517" height="1417" />
+    </state>
+    <state width="1209" height="207" key="GridCell.Tab.0.left/41.23.2519.1417@41.23.2519.1417" timestamp="1589387813582" />
+    <state width="1209" height="299" key="GridCell.Tab.0.left/42.23.2518.1417@42.23.2518.1417" timestamp="1589378561991" />
+    <state width="1209" height="207" key="GridCell.Tab.0.left/43.23.2517.1417@43.23.2517.1417" timestamp="1589389634190" />
+    <state width="1209" height="207" key="GridCell.Tab.0.right" timestamp="1589389634190">
+      <screen x="43" y="23" width="2517" height="1417" />
+    </state>
+    <state width="1209" height="207" key="GridCell.Tab.0.right/41.23.2519.1417@41.23.2519.1417" timestamp="1589387813582" />
+    <state width="1209" height="299" key="GridCell.Tab.0.right/42.23.2518.1417@42.23.2518.1417" timestamp="1589378561992" />
+    <state width="1209" height="207" key="GridCell.Tab.0.right/43.23.2517.1417@43.23.2517.1417" timestamp="1589389634190" />
+    <state x="1324" y="529" key="Vcs.Push.Dialog.v2" timestamp="1588757063275">
+      <screen x="43" y="23" width="2517" height="1417" />
+    </state>
+    <state x="1324" y="529" key="Vcs.Push.Dialog.v2/43.23.2517.1417@43.23.2517.1417" timestamp="1588757063275" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -994,375 +637,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chapter24/create5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter20/exercises/write_accounts_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="47" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter24/exercise/write_account_info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter3/sphere_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter2/rgb_colours.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/mandelbrot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/snowflake.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/circles-picture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter4/snowflake_koch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="13" lean-forward="true" selection-end-line="59" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="236" column="4" selection-start-line="236" selection-start-column="4" selection-end-line="236" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/matplotlib2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/line_graph3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/matplotlib/markers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="254" column="33" lean-forward="true" selection-start-line="254" selection-start-column="33" selection-end-line="254" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/scatter_plot6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/pie_chart5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/pie_chart_5a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/scatter_plot_trendline6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/bar_chart8b.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/bar_chart8d.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/bar_chart8c.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/sub_plots9.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/matplotlib/figure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="1822" column="28" selection-start-line="1822" selection-start-column="8" selection-end-line="1822" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/bar_chart8a.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/numpy/lib/function_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="4080" column="55" lean-forward="true" selection-start-line="4080" selection-start-column="4" selection-end-line="4080" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/warnings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="420" selection-start-line="420" selection-end-line="420" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/simple_plot1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter5/three-d-plot10.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#2#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter39/bookshop_service2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="76" column="29" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter12/StarshipMeteors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter18/streams_options.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter18/text_streams.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter34/reactive1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="39" selection-start-line="3" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter34/reactive3a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter37/MyHttpServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter37/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-502983299/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="2040" column="8" selection-start-line="2040" selection-start-column="8" selection-end-line="2040" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter38/hello_flask_world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter38/hello_flask_world2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter39/bookshop_service1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter34/reactive4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter34/reactive3b.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter34/reactive2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops3.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-          <folding>
-            <element signature="e#53#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter35/reactive_ops5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter7/SimpleHelloWorldApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter8/SimpleEventHandlerApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter8/HelloNamedApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter7/FrameAndPanelApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="34" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
