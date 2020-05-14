@@ -18,6 +18,13 @@ NEW_METEOR_CYCLE_INTERVAL = 40
 
 class GameObject:
 
+    def __init__(self):
+        self.x = 0
+        self.y = 0
+        self.image = None
+        self.width = 0
+        self.height = 0
+
     def load_image(self, filename):
         self.image = pygame.image.load(filename).convert()
         self.width = self.image.get_width()
@@ -38,6 +45,7 @@ class Starship(GameObject):
     """ Represents a starship"""
 
     def __init__(self, game):
+        super().__init__()
         self.game = game
         self.x = DISPLAY_WIDTH / 2
         self.y = DISPLAY_HEIGHT - 40
@@ -75,6 +83,7 @@ class Meteor(GameObject):
     """ represents a meteor in the game """
 
     def __init__(self, game):
+        super().__init__()
         self.game = game
         self.x = random.randint(0, DISPLAY_WIDTH)
         self.y = INITIAL_METEOR_Y_LOCATION
