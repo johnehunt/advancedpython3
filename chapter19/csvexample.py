@@ -18,8 +18,14 @@ def main():
     print('Starting to read csv file')
     with open('sample.csv', newline='') as csvfile:
         reader = csv.reader(csvfile)
+        # Process each row in the csv file
         for row in reader:
-            print(*row, sep=', ')
+            row_length = len(row)
+            print('row_length', row_length)
+            for i in range(row_length):
+                # Each element in the row can be accessed via an index
+                print(row[i], end=', ')
+            print()
     print('Done Reading')
 
 if __name__ == '__main__':
