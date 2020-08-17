@@ -19,7 +19,7 @@ def main():
     ws2.append([1, 2, 3])
     ws2.cell(column=2, row=1, value=15)
 
-    workbook.save('sample.xlsx')
+    workbook.save('sample2.xlsx')
 
     print('Done Write Excel Example')
 
