@@ -1,28 +1,32 @@
 from openpyxl import Workbook
 
 
-def main():
-    print('Starting Write Excel Example with openPyXL')
+print('Starting Write Excel Example with openPyXL')
 
-    workbook = Workbook()
-    # Get the current active worksheet
-    ws = workbook.active
-    ws.title = 'my worksheet'
-    ws.sheet_properties.tabColor = '1072BA'
+# Create an empty workbook
+workbook = Workbook()
+# Get the current active worksheet
+sheet = workbook.active
+sheet.title = 'dataset1'
+sheet.sheet_properties.tabColor = '0F45F7'
 
-    ws['A1'] = 42
-    ws['A2'] = 12
-    ws['A3'] = '=SUM(A1, A2)'
+sheet['A1'] = 'John'
+sheet['B1'] = 42
+sheet['C1'] = 56
+sheet['D1'] = '=SUM(B1,C1)/2'
+sheet['A2'] = 'Adam'
+sheet['B2'] = 75
+sheet['C2'] = 86
+sheet['D2'] = '=SUM(B2, C2)/2'
 
-    ws2 = workbook.create_sheet(title='my other sheet')
-    ws2['A1'] = 3.42
-    ws2.append([1, 2, 3])
-    ws2.cell(column=2, row=1, value=15)
+sheet2 = workbook.create_sheet(title='dataset2')
+sheet2.append(['John', 1, 2, 3, '=SUM(B1,D1)/3'])
+sheet2.append(['Adam', 5, 7, 8])
 
-    workbook.save('sample.xlsx')
-
-    print('Done Write Excel Example')
+sheet2.cell(column=1, row=3, value='John')
+sheet2.cell(column=2, row=3, value=15)
 
 
-if __name__ == '__main__':
-    main()
+workbook.save('sample2.xlsx')
+
+print('Done Write Excel Example')
