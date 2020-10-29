@@ -1,12 +1,12 @@
 import fileinput
 
-# Read multiple files
+# Read multiple files
 with fileinput.input(files=('textfile1.txt', 'textfile2.txt')) as f:
     for line in f:
         print(line, end='')
     print()
 
-# Indicate some facilities
+# Indicate some facilities
 with fileinput.input(files=('textfile1.txt', 'textfile2.txt')) as f:
         line = f.readline()
         print('f.filename():', f.filename())
