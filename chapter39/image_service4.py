@@ -19,12 +19,19 @@ def create_image_service():
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     app.config['UPLOAD_EXTENSIONS'] = ['.jpg', '.png', '.gif']
 
-    @app.route('/image', methods=['POST'])
+
+    @app.route('/api/image/<string:file>', methods=['GET'])
+    def get_image(file):
+        img_name = secure_filename(file)
+        return send_from_directory(app.config['UPLOAD_FOLDER'], img_name, as_attachment=True)
+
+
+    @app.route('/api/image', methods=['POST'])
     def upload_image():
         print('upload_image()')
-        if request.files['image']:
+        if request.files['file']:
             print(app.config['UPLOAD_FOLDER'])
-            img = request.files['image']
+            img = request.files['file']
             img_name = secure_filename(img.filename)
             print('Secure version of image name ', img_name)
             create_new_folder(app.config['UPLOAD_FOLDER'])
@@ -32,13 +39,14 @@ def create_image_service():
             print("saving to " + str(saved_path))
             img.save(saved_path)
             # Return a url to the image
-            return send_from_directory(app.config['UPLOAD_FOLDER'], img_name, as_attachment=True)
+            # return send_from_directory(app.config['UPLOAD_FOLDER'], img_name, as_attachment=True)
+            return 'Success'
         else:
             return "Where is the image?"
 
     @app.errorhandler(400)
     def not_found(error):
-        return make_response(jsonify({'image': 'Error'}), 400)
+        return make_response(jsonify({'file': 'Error'}), 400)
 
     return app
 
