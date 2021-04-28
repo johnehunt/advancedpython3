@@ -1,7 +1,7 @@
 import matplotlib.pyplot as pyplot
 # Import matplotlib colour map
 from matplotlib import cm as colourmap
-# Required for £D Projections
+# Required for 3D Projections
 from mpl_toolkits.mplot3d import Axes3D
 # Provide access to numpy functions
 import numpy as np
