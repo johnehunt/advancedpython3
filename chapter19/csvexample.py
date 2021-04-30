@@ -5,7 +5,7 @@ def main():
     print('Starting CSV Exmaple')
     print(csv.list_dialects())
 
-    print('Crearting CSV file')
+    print('Creating CSV file')
     with open('sample.csv', 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['She Loves You', 'Sept', 1963])
