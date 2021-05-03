@@ -214,6 +214,7 @@ class DrawingPanel(wx.Panel):
         self.Bind(wx.EVT_LEFT_DOWN, self.controller.on_mouse_click)
 
     def on_paint(self, event):
+
         self.DestroyChildren()
         """set up the device context (DC) for painting"""
         dc = wx.PaintDC(self)
