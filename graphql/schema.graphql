@@ -1,0 +1,27 @@
+enum CategoryType {
+    TECHNICAL
+    HISTORICAL
+    BIOGRAPH
+    FACTUAL
+}
+
+type Book {
+    isbn: String!
+    title: String!
+    author: String
+    category: CategoryType!
+    price: Float!
+}
+
+type Query {
+    hello: String!
+    book(isbn: String!): Book!
+    books: [Book]!
+}
+
+type Mutation {
+    addBook(isbn: String!
+        title: String!
+        author: String
+        price: Float!): Book
+}
