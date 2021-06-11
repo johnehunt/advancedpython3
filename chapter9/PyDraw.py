@@ -214,6 +214,8 @@ class DrawingPanel(wx.Panel):
         self.Bind(wx.EVT_LEFT_DOWN, self.controller.on_mouse_click)
 
     def on_paint(self, event):
+
+        self.DestroyChildren()
         """set up the device context (DC) for painting"""
         dc = wx.PaintDC(self)
         for figure in self.model.contents:
@@ -240,10 +242,12 @@ class DrawingController:
         self.get_mode = get_mode
 
     def on_mouse_click(self, mouse_event):
+        print('on_mouse_click', mouse_event)
         point = mouse_event.GetPosition()
         self.add(self.get_mode(), point)
 
     def add(self, mode, point, size=30):
+        fig = None
         if mode == PyDrawConstants.SQUARE_MODE:
             fig = Square(self.view, point, wx.Size(size, size))
         elif mode == PyDrawConstants.CIRCLE_MODE:
@@ -252,7 +256,8 @@ class DrawingController:
             fig = Text(self.view, point, size)
         elif mode == PyDrawConstants.LINE_MODE:
             fig = Line(self.view, point, size)
-        self.model.add_figure(fig)
+        if fig is not None:
+            self.model.add_figure(fig)
 
     def clear(self):
         self.model.clear_figures()
