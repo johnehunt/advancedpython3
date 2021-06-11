@@ -23,5 +23,6 @@ type Mutation {
     addBook(isbn: String!
         title: String!
         author: String
+        category: CategoryType!
         price: Float!): Book
 }

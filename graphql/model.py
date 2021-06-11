@@ -77,12 +77,13 @@ def resolve_add_book(_, info, isbn, title, author, category, price):
 	return newBook
 
 # mutation  {
-#   addBook (
-#     isbn : "345"
-#     title: "Advanced Python"
-#     author: "Bill Smith"
-#     price: 15.55
-#   ) {
-#     isbn
-#   }
+#   addBook(
+#      isbn : "345"
+#      title: "Advanced Python"
+#      author: "Bill Smith"
+#      category: TECHNICAL
+#      price: 15.55
+#    ) {
+#      isbn
+#    }
 # }
