@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0629a549-70f2-4599-8251-4cab35ded4ae" name="Default Changelist" comment="Some file example updates">
-      <change afterPath="$PROJECT_DIR$/chapter39/bookshop_service3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django-server/mysite/polls/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/furtherpython3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/furtherpython3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter24/mongo_examples.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/mongo_examples.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter24/query1.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter24/query1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter39/image_service4.py" beforeDir="false" afterPath="$PROJECT_DIR$/chapter39/image_service4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +62,8 @@
       <recent name="$PROJECT_DIR$/chapter27" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.image_service4">
-    <configuration name="bookshop_service3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.PyDraw">
+    <configuration name="PyDraw" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="furtherpython3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,11 +71,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter39" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chapter9" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter39/bookshop_service3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chapter9/PyDraw.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,7 +164,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.bookshop_service3" />
+      <item itemvalue="Python.PyDraw" />
       <item itemvalue="Python.files5" />
       <item itemvalue="Python.image_service4" />
       <item itemvalue="Python.query1" />
@@ -179,7 +176,7 @@
         <item itemvalue="Python.query1" />
         <item itemvalue="Python.image_service4" />
         <item itemvalue="Python.files5" />
-        <item itemvalue="Python.bookshop_service3" />
+        <item itemvalue="Python.PyDraw" />
       </list>
     </recent_temporary>
   </component>
@@ -194,20 +191,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556277447535</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Added a comment">
-      <created>1560160840265</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1560160840265</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Added some additional comments">
-      <created>1560165293042</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1560165293043</updated>
     </task>
     <task id="LOCAL-00053" summary="Moved fractal tree exercise solution into separate directory">
       <created>1560167326751</created>
@@ -538,7 +521,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616432890135</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Added remove children">
+      <created>1620062463897</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1620062463897</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Some file example updates">
+      <created>1620062544040</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1620062544040</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -554,7 +551,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Further Refactoring of the application classes" />
     <MESSAGE value="Added abstract method to the Figure class" />
     <MESSAGE value="General tidying of code and names" />
     <MESSAGE value="Added a simple example of using a device context for graphic displays" />
@@ -576,10 +572,11 @@
     <MESSAGE value="Updated" />
     <MESSAGE value="Added to the example - element access within a csv row" />
     <MESSAGE value="Split two query examples" />
-    <MESSAGE value="Some file example updates" />
     <MESSAGE value="Reformatting" />
     <MESSAGE value="Example of uploading image files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Example of uploading image files" />
+    <MESSAGE value="Added remove children" />
+    <MESSAGE value="Some file example updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some file example updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

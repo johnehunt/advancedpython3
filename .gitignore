@@ -1,3 +1,4 @@
 /venv/bin/
 /venv/lib/python3.8/site-packages/
 /venv/pyvenv.cfg
+/.idea/shelf/
