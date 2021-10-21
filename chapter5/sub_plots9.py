@@ -5,7 +5,7 @@ s = range(30, 10, -1)
 # Set up the grid of subplots to be 2 by 2
 grid_size='22'
 
-# Initialize a Figure
+# Initialize a Figure
 figure = pyplot.figure()
 
 # Add first subplot
